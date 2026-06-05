@@ -34,7 +34,7 @@ async def chat(
         answer=answer,
         retrieved_nodes=[
             {"label": n["label"], "dieu_khoan": n.get("dieu_khoan", "")}
-            for n in retrieval["nodes"][:8]
+            for n in retrieval["nodes"]
         ],
         relationships=retrieval["relationships"],
         session_id=session_id,
@@ -65,7 +65,7 @@ async def ws_chat(
                 "type": "context",
                 "retrieved_nodes": [
                     {"label": n["label"], "dieu_khoan": n.get("dieu_khoan", "")}
-                    for n in retrieval["nodes"][:8]
+                    for n in retrieval["nodes"]
                 ],
                 "relationships": retrieval["relationships"],
             })

@@ -302,12 +302,12 @@
     },
     {
       "id": "diem_cuoi_ky",
-      "label": "Điểm cuối kỳ",
+      "label": "Điểm cuối kỳ trọng số 0.5 đến 0.8 học phần từ 2 tín chỉ trở lên đề cương chi tiết",
       "type": "KhaiNiem",
       "properties": {
         "mo_ta": "Điểm thi/đánh giá cuối kỳ, trọng số từ 0.5 đến 0.8 theo đề cương chi tiết.",
         "dieu_khoan": "Điều 5",
-        "gia_tri": "Trọng số 0.5-0.8"
+        "gia_tri": "HP ≥2TC: trọng số CK từ 0.5 đến 0.8 theo đề cương; HP <2TC: có thể chỉ điểm CK"
       }
     },
     {
@@ -362,7 +362,7 @@
     },
     {
       "id": "hoan_thi",
-      "label": "Hoãn thi",
+      "label": "Hoãn thi cuối kỳ 2 học kỳ tiếp không có thi lại điểm F nếu quá hạn ốm tai nạn",
       "type": "QuyTrinh",
       "properties": {
         "mo_ta": "Không thể dự thi cuối kỳ (đã học và đóng HP) vì ốm/tai nạn/lý do chính đáng → được hoãn thi. Được dự thi trong 2 học kỳ chính tiếp theo. Nếu không thi trong 2 kỳ → điểm F. Không có lần thi lại thông thường.",
@@ -432,12 +432,12 @@
     },
     {
       "id": "xep_hang_nam_hoc",
-      "label": "Xếp hạng trình độ năm học",
+      "label": "Xếp hạng năm học tín chỉ tích lũy TCTL năm 1 dưới 32 năm 2 32 64 năm 3 96 năm 4 128 năm 5",
       "type": "KhaiNiem",
       "properties": {
         "mo_ta": "Năm 1(<32 TC), Năm 2(32-63), Năm 3(64-95), Năm 4(96-127), Năm 5(>=128)",
         "dieu_khoan": "Điều 12",
-        "gia_tri": "<32: N1, 32-63: N2, 64-95: N3, 96-127: N4, >=128: N5"
+        "gia_tri": "Năm 1: TCTL<32; Năm 2: 32-63; Năm 3: 64-95; Năm 4: 96-127; Năm 5: ≥128"
       }
     },
     {
@@ -752,12 +752,12 @@
     },
     {
       "id": "dang_ky_hoc_tap_thac_si",
-      "label": "Số tín chỉ đăng ký học tập thạc sĩ mỗi học kỳ",
+      "label": "Thạc sĩ đăng ký tối đa bao nhiêu tín chỉ mỗi học kỳ mỗi năm chính quy VLVH",
       "type": "QuyTrinh",
       "properties": {
-        "mo_ta": "Số tín chỉ được phép đăng ký mỗi học kỳ cho học viên thạc sĩ:\n- Chính quy: tối đa 24 TC/kỳ, không quá 45 TC/năm học\n- VLVH: tối đa 20 TC/kỳ, không quá 30 TC/năm học\n- Kỳ cuối: không áp dụng tối đa nhưng vẫn ≤ giới hạn năm\n- Lớp HP: tối thiểu 5 HV; <5 HV → mở dạng đồ án/tiểu luận thay thế",
+        "mo_ta": "Số TC đăng ký mỗi học kỳ và mỗi năm cho học viên thạc sĩ (Điều 27):\n- Chính quy (CQ): tối đa 24 TC/kỳ; không quá 45 TC/năm học\n- Vừa làm vừa học (VLVH): tối đa 20 TC/kỳ; không quá 30 TC/năm học\n- Kỳ cuối: không áp dụng tối đa TC/kỳ nhưng vẫn ≤ giới hạn năm\n- Lớp HP < 5 HV: xem xét mở dạng đồ án/tiểu luận thay thế",
         "dieu_khoan": "Điều 27",
-        "gia_tri": "CQ: ≤24TC/kỳ, ≤45TC/năm; VLVH: ≤20TC/kỳ, ≤30TC/năm; Lớp min 5 HV"
+        "gia_tri": "CQ: tối đa 24TC/kỳ, tối đa 45TC/năm; VLVH: tối đa 20TC/kỳ, tối đa 30TC/năm; kỳ cuối không áp dụng max TC/kỳ"
       }
     },
     {
@@ -802,12 +802,12 @@
     },
     {
       "id": "dieu_kien_bao_ve_luan_van",
-      "label": "Điều kiện bảo vệ luận văn ThS",
+      "label": "Điều kiện bảo vệ luận văn thạc sĩ người hướng dẫn phản biện xác nhận ngoại ngữ bậc 4/6",
       "type": "DieuKien",
       "properties": {
         "mo_ta": "Điều kiện BV LV ThS:\n(1) Hoàn thành và đạt các HP theo yêu cầu CTĐT\n(2) Đạt chuẩn ngoại ngữ: bậc 4/6 Khung 6 bậc VN, hoặc chứng chỉ tương đương Bộ GDĐT quy định, hoặc bằng ĐH+ ngành NN nước ngoài, hoặc bằng ĐH+ CT dạy hoàn toàn NN\n(3) HD và PB xác nhận LV đủ chất lượng",
         "dieu_khoan": "Điều 31",
-        "gia_tri": "Bậc 4/6 Khung 6 bậc VN; NN đầu vào và đầu ra phải cùng ngôn ngữ"
+        "gia_tri": "Bậc 4/6 Khung 6 bậc VN; HD và PB xác nhận LV đủ chất lượng; hoàn thành HP CTĐT"
       }
     },
     {
@@ -832,22 +832,22 @@
     },
     {
       "id": "dieu_kien_tot_nghiep_thac_si",
-      "label": "Điều kiện tốt nghiệp thạc sĩ",
+      "label": "Điều kiện tốt nghiệp thạc sĩ nộp luận văn Tạ Quang Bửu công khai 30 ngày 20 ngày",
       "type": "DieuKien",
       "properties": {
-        "mo_ta": "Điều kiện TN ThS:\n(a) Luận văn đạt\n(b) Nộp quyển LV đã sửa theo kết luận HĐ; công khai toàn văn trên web ĐHBK ≥30 ngày\n(c) Nộp quyển LV cho TV Tạ Quang Bửu trong 20 ngày từ ngày BV thành công\n(d) Không bị truy cứu HS, không đang kỷ luật/đình chỉ",
+        "mo_ta": "Điều kiện TN ThS (Điều 34):\n(a) Luận văn đạt yêu cầu\n(b) Nộp quyển LV đã sửa; công khai toàn văn trên web ĐHBK tối thiểu 30 ngày\n(c) Nộp quyển LV cho Thư viện Tạ Quang Bửu trong 20 ngày từ ngày bảo vệ thành công\n(d) Không bị truy cứu hình sự và không đang bị kỷ luật đình chỉ\nCấp bằng trong 2 tháng từ khi đủ điều kiện.",
         "dieu_khoan": "Điều 34",
-        "gia_tri": "LV đạt; nộp TV trong 20 ngày; công khai ≥30 ngày; cấp bằng trong 2 tháng"
+        "gia_tri": "LV đạt; nộp TV Tạ Quang Bửu trong 20 ngày; công khai ≥30 ngày trên web ĐHBK; cấp bằng 2 tháng"
       }
     },
     {
       "id": "hang_tot_nghiep_thac_si",
-      "label": "Hạng tốt nghiệp thạc sĩ",
+      "label": "Hạng tốt nghiệp thạc sĩ CPA xuất sắc giỏi khá trung bình bao nhiêu cấp bằng 2 tháng",
       "type": "KhaiNiem",
       "properties": {
         "mo_ta": "Xếp theo CPA toàn khóa (tính cả LV, không tính HP được CN):\n- Trung bình: 2.0-2.49\n- Khá: 2.5-3.19\n- Giỏi: 3.2-3.59\n- Xuất sắc: 3.6-4.0\nCấp bằng trong 2 tháng từ khi đủ điều kiện.",
         "dieu_khoan": "Điều 34",
-        "gia_tri": "TB: 2.0-2.49, Khá: 2.5-3.19, Giỏi: 3.2-3.59, XS: 3.6-4.0; cấp bằng trong 2 tháng"
+        "gia_tri": "Trung bình: 2.0-2.49; Khá: 2.5-3.19; Giỏi: 3.2-3.59; Xuất sắc: 3.6-4.0; cấp bằng trong 2 tháng"
       }
     },
     {
@@ -952,12 +952,12 @@
     },
     {
       "id": "bao_ve_luan_an_co_so",
-      "label": "Bảo vệ luận án cấp cơ sở (TS)",
+      "label": "Bảo vệ luận án tiến sĩ cấp cơ sở 7 thành viên 21 ngày 45 ngày 6 phiếu đồng ý",
       "type": "QuyTrinh",
       "properties": {
         "mo_ta": "HĐ cơ sở: 7 TV (CT, TK, 2 PB, UV) do Hiệu trưởng/Trưởng khoa/Viện trưởng thừa ủy quyền.\nTổ chức: sau 21 ngày và trước 45 ngày từ QĐ thành lập HĐ.\nKết quả: ≥6/7 TV đồng ý → đề nghị BV cấp ĐH.\nSau BV cơ sở: NCS sửa LA trong 20 ngày.",
         "dieu_khoan": "Điều 42",
-        "gia_tri": "7 TV; tổ chức sau 21 ngày, trước 45 ngày; ≥6/7 đồng ý; sửa trong 20 ngày"
+        "gia_tri": "7 TV (CT,TK,2PB,UV); sau 21 ngày, trước 45 ngày; ≥6/7 đồng ý → BV cấp ĐH; sửa LA trong 20 ngày"
       }
     },
     {
@@ -1112,7 +1112,7 @@
     },
     {
       "id": "vang_mat_anh_huong_diem",
-      "label": "Vắng mặt ảnh hưởng điểm",
+      "label": "Vắng mặt 0 lần cộng 1 điểm 3-4 lần trừ 1 điểm 5 lần trừ 2 điểm quá trình",
       "type": "KhaiNiem",
       "properties": {
         "mo_ta": "Kết quả điểm danh cộng/trừ vào điểm QT: 0 lần +1, 1-2 lần 0, 3-4 lần -1, >=5 lần -2 điểm QT.",
@@ -1962,12 +1962,12 @@
     },
     {
       "id": "diem_thanh_phan_datn",
-      "label": "Điểm thành phần ĐATN",
+      "label": "Điểm đồ án tốt nghiệp ĐATN tính công thức người hướng dẫn phản biện hội đồng 0.5 4.9",
       "type": "KhaiNiem",
       "properties": {
-        "mo_ta": "ĐATN tính từ: QT=0.5 (TB điểm HD và PB) + CK=0.5 (điểm bảo vệ HĐ). HD/PB cho <5 → không được bảo vệ. TV HĐ cho <5 → bảo vệ tối đa 4.9.",
+        "mo_ta": "Công thức tính điểm ĐATN/khóa luận TN cử nhân (Điều 13):\n- Điểm ĐATN = 0.5 × Điểm QT + 0.5 × Điểm CK\n- QT = TB(điểm người hướng dẫn + điểm phản biện), lẻ tới 0.5\n- CK = TB(điểm các TV Hội đồng), lẻ tới 0.5\n- Nếu HD hoặc PB cho < 5 → không được bảo vệ, điểm BV = 0\n- Nếu 1 TV HĐ cho < 5 → điểm BV là điểm liệt, tối đa 4.9\n- Điểm đạt: từ C trở lên (≥5.5)",
         "dieu_khoan": "Điều 13",
-        "gia_tri": "QT: TB(HD,PB) × 0.5; CK: TB(HĐ) × 0.5; Điểm lẻ tới 0.5"
+        "gia_tri": "ĐATN = 0.5×QT + 0.5×CK; QT=TB(HD,PB)×0.5; HD/PB <5→không BV; TV HĐ <5→tối đa 4.9; đạt từ C"
       }
     },
     {
@@ -2298,6 +2298,566 @@
         "mo_ta": "Điều kiện để được hạ mức cảnh báo học tập:\n- Đang cảnh báo mức 1 hoặc mức 2: số TC không đạt trong kỳ ≤ 4 → hạ 1 mức\n- Đang cảnh báo mức 3: TC nợ đọng từ đầu khóa ≤ 24 → hạ xuống mức 2\nLưu ý: Việc hạ mức từ mức 3 về mức 2 không phụ thuộc vào điều kiện nâng mức",
         "dieu_khoan": "Điều 19",
         "gia_tri": "Mức 1/2: k.đạt≤4TC → hạ 1 mức; Mức 3: nợ≤24TC → về mức 2"
+      }
+    },
+    {
+      "id": "bang_thang_diem_chu_f_d_c_b_a",
+      "label": "Bảng thang điểm chữ F D C B A quy đổi từ thang 10 sang thang 4",
+      "type": "KhaiNiem",
+      "properties": {
+        "mo_ta": "Bảng quy đổi điểm học phần từ thang 10 sang điểm chữ và thang 4:\n- F: 0.0 – 3.9 → 0 điểm (Không đạt)\n- D: 4.0 – 4.9 → 1 điểm\n- D+: 5.0 – 5.4 → 1.5 điểm\n- C: 5.5 – 6.4 → 2.0 điểm\n- C+: 6.5 – 6.9 → 2.5 điểm\n- B: 7.0 – 7.9 → 3.0 điểm\n- B+: 8.0 – 8.4 → 3.5 điểm\n- A: 8.5 – 9.4 → 4.0 điểm\n- A+: 9.5 – 10.0 → 4.0 điểm",
+        "dieu_khoan": "Điều 5",
+        "gia_tri": "F=0, D=1, D+=1.5, C=2.0, C+=2.5, B=3.0, B+=3.5, A=4.0, A+=4.0"
+      }
+    },
+    {
+      "id": "vang_mat_tru_cong_diem_qua_trinh_bao_nhieu",
+      "label": "Vắng mặt nhiều lần bị trừ cộng mấy điểm quá trình",
+      "type": "KhaiNiem",
+      "properties": {
+        "mo_ta": "Kết quả điểm danh ảnh hưởng điểm quá trình của học phần:\n- Vắng 0 lần: được cộng +1 điểm vào điểm QT\n- Vắng 1-2 lần: không thay đổi (0)\n- Vắng 3-4 lần: bị trừ -1 điểm vào điểm QT\n- Vắng từ 5 lần trở lên: bị trừ -2 điểm vào điểm QT\nÁp dụng cho các giờ lên lớp có điểm danh.",
+        "dieu_khoan": "Điều 5",
+        "gia_tri": "0 lần: +1; 1-2 lần: 0; 3-4 lần: -1; ≥5 lần: -2"
+      }
+    },
+    {
+      "id": "phuc_tra_diem_trong_bao_nhieu_ngay_thoi_han",
+      "label": "Phúc tra khiếu nại điểm trong bao nhiêu ngày thời hạn",
+      "type": "QuyTrinh",
+      "properties": {
+        "mo_ta": "Người học được đề nghị phúc tra hoặc khiếu nại điểm trong thời hạn 7 ngày kể từ khi điểm học phần được cập nhật vào tài khoản học tập. Không áp dụng phúc tra với học phần thi vấn đáp hoặc đánh giá trước hội đồng.",
+        "dieu_khoan": "Điều 6",
+        "gia_tri": "7 ngày từ khi điểm cập nhật tài khoản; không áp dụng với vấn đáp/đánh giá trước HĐ"
+      }
+    },
+    {
+      "id": "hang_tot_nghiep_thac_si_xuat_sac_gioi_kha_tb",
+      "label": "Hạng tốt nghiệp thạc sĩ xuất sắc giỏi khá trung bình CPA bao nhiêu",
+      "type": "KhaiNiem",
+      "properties": {
+        "mo_ta": "Hạng tốt nghiệp thạc sĩ được xếp theo CPA toàn khóa (tính cả luận văn, không tính HP được CN):\n- Trung bình: CPA 2.0 – 2.49\n- Khá: CPA 2.5 – 3.19\n- Giỏi: CPA 3.2 – 3.59\n- Xuất sắc: CPA 3.6 – 4.0\nCấp bằng trong 2 tháng từ khi đủ điều kiện.",
+        "dieu_khoan": "Điều 34",
+        "gia_tri": "Trung bình: 2.0-2.49; Khá: 2.5-3.19; Giỏi: 3.2-3.59; Xuất sắc: 3.6-4.0; cấp bằng 2 tháng"
+      }
+    },
+    {
+      "id": "hoi_dong_bao_ve_luan_an_tien_si_may_thanh_vien",
+      "label": "Hội đồng bảo vệ luận án tiến sĩ gồm mấy thành viên thời gian tổ chức",
+      "type": "QuyTrinh",
+      "properties": {
+        "mo_ta": "Hội đồng đánh giá luận án tiến sĩ cấp cơ sở gồm 7 thành viên: chủ tịch, thư ký, 2 phản biện và các ủy viên. Do hiệu trưởng/trưởng khoa/viện trưởng thừa ủy quyền thành lập. Tổ chức sau 21 ngày và trước 45 ngày từ QĐ thành lập. Cần ≥6/7 thành viên đồng ý để đề nghị BV cấp ĐH. Sau BV phải sửa LA trong 20 ngày.\nHội đồng cấp Đại học: 7 thành viên (CT, TK, 3 PB, UV). Tổ chức trong 2 tháng từ QĐ. Không đạt nếu ≥2 phiếu không đồng ý.",
+        "dieu_khoan": "Điều 42",
+        "gia_tri": "7 thành viên; cơ sở: sau 21 ngày trước 45 ngày, ≥6 đồng ý; sửa 20 ngày; cấp ĐH: trong 2 tháng, <2 phiếu chống"
+      }
+    },
+    {
+      "id": "cach_tinh_diem_do_an_tot_nghiep_datn_cong_thuc",
+      "label": "Cách tính điểm đồ án tốt nghiệp ĐATN công thức người hướng dẫn phản biện hội đồng",
+      "type": "KhaiNiem",
+      "properties": {
+        "mo_ta": "Công thức tính điểm ĐATN/khóa luận TN cử nhân:\n- Điểm ĐATN = 0.5 × Điểm QT + 0.5 × Điểm CK\n- Điểm QT = TB(điểm người hướng dẫn + điểm người phản biện), làm tròn 1 chữ số\n- Nếu HD hoặc PB cho điểm < 5 → SV không được bảo vệ, điểm BV = 0\n- Điểm CK = TB(điểm các thành viên HĐ), làm tròn 1 chữ số\n- Nếu 1 TV HĐ cho < 5 → điểm BV là điểm liệt, tối đa 4.9\n- Các điểm của HD, PB, TV HĐ được phép lẻ tới 0.5\n- Điểm đạt: từ C trở lên",
+        "dieu_khoan": "Điều 13",
+        "gia_tri": "ĐATN = 0.5×QT + 0.5×CK; HD/PB <5 → không BV; TV HĐ <5 → tối đa 4.9; đạt từ C"
+      }
+    },
+    {
+      "id": "hoan_thi_cuoi_ky_quy_trinh_thoi_han_dieu_kien",
+      "label": "Hoãn thi cuối kỳ quy trình thực hiện điều kiện thời hạn bao lâu",
+      "type": "QuyTrinh",
+      "properties": {
+        "mo_ta": "Quy định hoãn thi cuối kỳ:\n- Điều kiện: không thể dự thi cuối kỳ (đã học và đóng HP) vì ốm, tai nạn hoặc lý do chính đáng\n- Được phép hoãn thi và dự thi trong 2 học kỳ chính tiếp theo\n- Nếu không dự thi trong 2 kỳ tiếp → điểm học phần là F\n- KHÔNG có lần thi lại thông thường, phải đăng ký học lại\n- Nhận điểm I (Incomplete) khi hoãn thi đúng quy định\n- Thi giữa kỳ: được bố trí thi bù hoặc nội dung kiểm tra khác thay thế",
+        "dieu_khoan": "Điều 6",
+        "gia_tri": "Được thi trong 2 kỳ chính tiếp; quá hạn → điểm F; không có thi lại; phải học lại nếu muốn thi lại"
+      }
+    },
+    {
+      "id": "xep_hang_trinh_do_nam_hoc_theo_so_tin_chi_tich_luy",
+      "label": "Xếp hạng trình độ năm học theo số tín chỉ tích lũy TCTL năm thứ nhất hai ba bốn năm",
+      "type": "KhaiNiem",
+      "properties": {
+        "mo_ta": "Sinh viên được xếp hạng trình độ năm học căn cứ vào số tín chỉ tích lũy (TCTL):\n- Năm thứ nhất: TCTL < 32 TC\n- Năm thứ hai: TCTL từ 32 đến 63 TC\n- Năm thứ ba: TCTL từ 64 đến 95 TC\n- Năm thứ tư: TCTL từ 96 đến 127 TC\n- Năm thứ năm: TCTL ≥ 128 TC\nXếp hạng này quyết định nhiều quyền lợi như đăng ký học 2 CT, lớp rút gọn.",
+        "dieu_khoan": "Điều 12",
+        "gia_tri": "<32: Năm 1; 32-63: Năm 2; 64-95: Năm 3; 96-127: Năm 4; ≥128: Năm 5"
+      }
+    },
+    {
+      "id": "dieu_kien_chuyen_chuong_trinh_cpa_nam_thu_nhat",
+      "label": "Điều kiện chuyển chương trình đào tạo sau năm nhất CPA khá tài năng",
+      "type": "DieuKien",
+      "properties": {
+        "mo_ta": "Điều kiện để được xét chuyển chương trình đào tạo (Điều 17):\n- Thời điểm: sau khi học hết năm 1 (kể cả thời gian nghỉ TT)\n- CPA ≥ 2.5 (xếp loại Khá trở lên)\n- Không bị cảnh báo học tập\n- Không đang bị kỷ luật\n- Đáp ứng điều kiện trúng tuyển của CT muốn chuyển\nChuyển vào CT Tài năng (sau năm 2): CPA ≥ 3.2 (Giỏi)\nKết quả HP đã tích lũy được xem xét bảo lưu và CN tương đương.",
+        "dieu_khoan": "Điều 17",
+        "gia_tri": "Sau năm 1; CPA≥2.5 để chuyển CT thường; CPA≥3.2 vào CT Tài năng (sau năm 2)"
+      }
+    },
+    {
+      "id": "dieu_kien_tot_nghiep_thac_si_nop_luan_van_thu_vien",
+      "label": "Điều kiện tốt nghiệp thạc sĩ nộp luận văn thư viện công khai bao nhiêu ngày",
+      "type": "DieuKien",
+      "properties": {
+        "mo_ta": "4 điều kiện để được xét công nhận tốt nghiệp thạc sĩ:\n(1) Luận văn đạt yêu cầu\n(2) Nộp quyển LV đã sửa theo kết luận HĐ; công khai toàn văn trên website ĐHBK tối thiểu 30 ngày\n(3) Nộp quyển LV cho thư viện Tạ Quang Bửu trong 20 ngày kể từ ngày bảo vệ thành công\n(4) Không bị truy cứu hình sự và không đang bị kỷ luật đình chỉ\nCấp bằng trong 2 tháng từ khi đủ điều kiện.",
+        "dieu_khoan": "Điều 34",
+        "gia_tri": "LV đạt; công khai ≥30 ngày; nộp TV TQB trong 20 ngày; cấp bằng trong 2 tháng"
+      }
+    },
+    {
+      "id": "tieu_luan_tong_quan_ncs_hoan_thanh_bao_lau_dieu_kien",
+      "label": "Tiểu luận tổng quan NCS hoàn thành trong bao lâu điều kiện đạt báo cáo",
+      "type": "DieuKien",
+      "properties": {
+        "mo_ta": "Tiểu luận tổng quan của NCS:\n- Yêu cầu: phân tích, đánh giá công trình NC trong/ngoài nước liên quan đề tài, rút ra mục đích và nhiệm vụ NC của LA\n- Thực hiện dưới hướng dẫn của GVHD\n- Đánh giá: báo cáo KH tại đơn vị chuyên môn\n- Đạt khi: GVHD và đơn vị chuyên môn thông qua\n- Thời hạn: hoàn thành trong 12 tháng từ khi có QĐ công nhận NCS",
+        "dieu_khoan": "Điều 39",
+        "gia_tri": "Trong 12 tháng từ QĐ công nhận NCS; GVHD + đơn vị CM thông qua"
+      }
+    },
+    {
+      "id": "buoc_thoi_hoc_sinh_vien_canh_bao_muc_3_lan_hai",
+      "label": "Buộc thôi học sinh viên khi nào cảnh báo mức 3 lần thứ 2 chậm tiến độ",
+      "type": "DieuKien",
+      "properties": {
+        "mo_ta": "Sinh viên đại học bị buộc thôi học trong 2 trường hợp:\n(a) Bị cảnh báo học tập mức 3 lần thứ 2 liên tiếp\n(b) Học chậm tiến độ quá thời gian cho phép, hoặc không còn đủ khả năng tốt nghiệp trong thời gian cho phép\nBuộc thôi học khác với tự nguyện thôi học: SV đã bị buộc thôi học không được tiếp nhận trở lại (trừ khi thi lại và trúng tuyển, nhưng phải học lại từ đầu).",
+        "dieu_khoan": "Điều 19",
+        "gia_tri": "Mức 3 x2 liên tiếp → buộc thôi học; hoặc chậm tiến độ quá thời gian; không được tiếp nhận lại"
+      }
+    },
+    {
+      "id": "so_tin_chi_toi_thieu_de_tot_nghiep_cu_nhan",
+      "label": "Số tín chỉ tối thiểu để tốt nghiệp cử nhân kỹ sư thạc sĩ tiến sĩ",
+      "type": "KhaiNiem",
+      "properties": {
+        "mo_ta": "Khối lượng học tập tối thiểu để tốt nghiệp theo từng chương trình:\n- Cử nhân: 132 tín chỉ / 4 năm (tốt nghiệp THPT)\n- Kỹ sư (từ CN tích hợp): 48 TC / 1.5 năm\n- Kỹ sư (từ CN thường): 60 TC / 2 năm\n- Thạc sĩ (từ CN): 60 TC / 2 năm\n- Thạc sĩ (từ CN tích hợp): 48 TC / 1.5 năm\n- Tiến sĩ (từ ThS): 106 TC / 3 năm\n- Tiến sĩ (từ ĐH): 151 TC / 4 năm",
+        "dieu_khoan": "Điều 2",
+        "gia_tri": "CN: 132TC; KS tích hợp: 48TC; KS thường: 60TC; ThS: 60TC; TS từ ThS: 106TC; TS từ ĐH: 151TC"
+      }
+    },
+    {
+      "id": "chuong_trinh_tich_hop_cu_nhan_ky_su_thac_si_thoi_gian",
+      "label": "Chương trình tích hợp cử nhân kỹ sư thạc sĩ thời gian tín chỉ",
+      "type": "KhaiNiem",
+      "properties": {
+        "mo_ta": "Chương trình tích hợp CN-KS hoặc CN-ThS thiết kế tổng thể theo hướng tích hợp 2 bậc:\n- Tổng thời gian: 5.5 năm, 180 tín chỉ\n- Cử nhân: 4 năm, cấp bằng cử nhân\n- Kỹ sư hoặc Thạc sĩ: 1.5 năm, 48 TC\nTrong CT CN: đăng ký học trước tối đa 15 TC các HP kỹ sư/thạc sĩ.",
+        "dieu_khoan": "Điều 2",
+        "gia_tri": "5.5 năm, 180 TC tổng; CN: 4 năm; KS/ThS: 1.5 năm 48 TC; học trước max 15 TC"
+      }
+    },
+    {
+      "id": "diem_trung_binh_tich_luy_toan_khoa_xet_tot_nghiep",
+      "label": "Điểm trung bình tích lũy toàn khóa tính như thế nào xét tốt nghiệp",
+      "type": "KhaiNiem",
+      "properties": {
+        "mo_ta": "Điểm trung bình toàn khóa = CPA toàn khóa tính theo các học phần đăng ký tốt nghiệp (không phải tất cả HP đã học). SV có thể đăng ký nhiều hơn yêu cầu nhưng khi đăng ký TN chỉ chọn đủ hoặc không nhiều hơn 3 TC. Điểm này quyết định hạng tốt nghiệp.",
+        "dieu_khoan": "Điều 15",
+        "gia_tri": "CPA tính theo HP đăng ký TN; chọn không quá +3 TC so yêu cầu CT"
+      }
+    },
+    {
+      "id": "sinh_vien_duoc_tot_nghiep_som_hon_cham_hon",
+      "label": "Sinh viên được tốt nghiệp sớm hơn hay chậm hơn bao lâu",
+      "type": "QuyTrinh",
+      "properties": {
+        "mo_ta": "Người học được phép tốt nghiệp sớm hoặc chậm hơn kế hoạch chuẩn:\n- Tốt nghiệp sớm: khi đã đáp ứng đủ điều kiện TN\n- Tốt nghiệp chậm: tối đa 5 học kỳ chính (cử nhân), 2 học kỳ (kỹ sư/thạc sĩ)\n- Tiến sĩ: 3-4 năm chuẩn, gia hạn tối đa 24 tháng (2 lần, mỗi lần ≥6 tháng)",
+        "dieu_khoan": "Điều 3",
+        "gia_tri": "CN: chậm max 5 kỳ; KS/ThS: chậm max 2 kỳ; TS: gia hạn max 24 tháng"
+      }
+    },
+    {
+      "id": "hoc_phan_duoc_mien_hoc_cong_nhan_diem_r",
+      "label": "Học phần được miễn học công nhận tín chỉ điểm R tính vào TCTL không tính GPA",
+      "type": "KhaiNiem",
+      "properties": {
+        "mo_ta": "Điểm R (Recognized) là điểm đặc biệt cho học phần được miễn học và công nhận tín chỉ. Điểm R được tính vào số TC tích lũy (TCTL) nhưng KHÔNG tính vào GPA và CPA. Học phần được CN phải đạt từ C trở lên (với ThS). ThS: tối đa 30 TC được CN, hiệu lực 5 năm.",
+        "dieu_khoan": "Điều 5, Điều 28",
+        "gia_tri": "Tính vào TCTL; không tính GPA/CPA; ThS: max 30 TC, 5 năm hiệu lực"
+      }
+    },
+    {
+      "id": "khung_diem_gpa_cpa_quy_doi_thang_10_cong_thuc",
+      "label": "Quy đổi GPA CPA thang 4 sang thang 10 công thức tính",
+      "type": "KhaiNiem",
+      "properties": {
+        "mo_ta": "Công thức quy đổi điểm TB (thang 4 → thang 10) áp dụng từ loại Trung bình trở lên:\n- Dải 2.0 – <2.5 → 5.5 – <7.0: Điểm10 = 3.00 × Điểm4 − 0.5\n- Dải 2.5 – <3.2 → 7.0 – <8.0: Điểm10 = 1.42 × Điểm4 + 3.45\n- Dải 3.2 – <3.6 → 8.0 – <9.0: Điểm10 = 2.50 × Điểm4\n- Dải 3.6 – 4.0 → 9.0 – 10: Điểm10 = 2.50 × Điểm4",
+        "dieu_khoan": "Điều 12",
+        "gia_tri": "2.0-2.5: a=3.0,b=-0.5; 2.5-3.2: a=1.42,b=3.45; 3.2-4.0: a=2.5,b=0"
+      }
+    },
+    {
+      "id": "ncs_bi_buoc_thoi_hoc_truong_hop_nao",
+      "label": "NCS bị buộc thôi học trong trường hợp nào nghiên cứu sinh",
+      "type": "DieuKien",
+      "properties": {
+        "mo_ta": "NCS bị buộc thôi học trong các trường hợp:\n(a) Hết thời gian không hoàn thành CTĐT hoặc LA không được HĐ cấp ĐH thông qua (kể cả đánh giá lại)\n(b) Vi phạm nghiêm trọng quy định về trách nhiệm NCS hoặc pháp luật, đã có kết luận\n(c) Vi phạm nội quy/quy chế ĐHBK ở mức buộc thôi học\nNCS tự nguyện thôi học: làm đơn và được xem xét.",
+        "dieu_khoan": "Điều 45",
+        "gia_tri": "Hết thời gian không xong; LA không qua HĐ cấp ĐH; vi phạm nghiêm trọng"
+      }
+    },
+    {
+      "id": "diem_dat_la_bao_nhieu_cu_nhan_thac_si",
+      "label": "Điểm đạt là bao nhiêu cử nhân kỹ sư thạc sĩ tiến sĩ",
+      "type": "KhaiNiem",
+      "properties": {
+        "mo_ta": "Điểm đạt của học phần theo từng bậc đào tạo:\n- Cử nhân và Kỹ sư: từ điểm D trở lên (≥4.0 thang 10)\n  Ngoại trừ: ĐATN, khóa luận TN cử nhân, ĐATN kỹ sư phải từ C trở lên (≥5.5)\n- Thạc sĩ và Tiến sĩ: từ điểm C trở lên (≥5.5 thang 10)",
+        "dieu_khoan": "Điều 5",
+        "gia_tri": "CN/KS: từ D (≥4.0); ĐATN CN/KS: từ C (≥5.5); ThS/TS: từ C (≥5.5)"
+      }
+    },
+    {
+      "id": "diem_hoc_phan_duoc_tinh_the_nao",
+      "label": "Điểm học phần được tính thế nào từ điểm thành phần trọng số",
+      "type": "KhaiNiem",
+      "properties": {
+        "mo_ta": "Điểm học phần = tổng điểm thành phần với trọng số tương ứng, làm tròn 1 chữ số thập phân, sau đó quy đổi sang điểm chữ. Nếu có 1 điểm thành phần là điểm liệt → điểm HP = F. Điểm QT và CK theo thang 10, lẻ tới 0.5.",
+        "dieu_khoan": "Điều 5",
+        "gia_tri": "= QT×trọng_số + CK×trọng_số; có liệt → F; làm tròn 1 chữ số"
+      }
+    },
+    {
+      "id": "so_tc_tich_luy_tinh_the_nao_bao_gom_gi",
+      "label": "Số tín chỉ tích lũy tính thế nào bao gồm những gì",
+      "type": "KhaiNiem",
+      "properties": {
+        "mo_ta": "Số TC tích lũy (TCTL) = tổng số TC của các học phần có điểm ĐẠT kể từ đầu khóa, bao gồm cả các HP được miễn học và công nhận TC (điểm R). Không tính HP điểm F, I, X, W. TCTL dùng để xếp hạng trình độ năm học.",
+        "dieu_khoan": "Điều 7",
+        "gia_tri": "Tổng TC HP điểm đạt + HP điểm R; không tính F/I/X/W"
+      }
+    },
+    {
+      "id": "hoc_phi_nop_tre_bi_gi_dinh_chi",
+      "label": "Nộp học phí trễ bị gì đình chỉ đăng ký học",
+      "type": "DieuKien",
+      "properties": {
+        "mo_ta": "Người học không nộp đủ học phí sau thời hạn quy định sẽ bị đình chỉ đăng ký học tập một học kỳ kế tiếp. Học phí lớp rút gọn = 50% so với lớp bình thường.",
+        "dieu_khoan": "Điều 9",
+        "gia_tri": "Trễ HP → đình chỉ đăng ký 1 kỳ tiếp; lớp rút gọn: HP = 50%"
+      }
+    },
+    {
+      "id": "rut_dang_ky_hoc_phan_sau_bao_lau_dieu_chinh",
+      "label": "Rút đăng ký học phần sau thời gian điều chỉnh được không điểm W",
+      "type": "QuyTrinh",
+      "properties": {
+        "mo_ta": "Sau thời gian điều chỉnh đăng ký, SV có thể đề nghị rút đăng ký học phần để không tính kết quả học tập (nhận điểm W). Rút HP trong 7 tuần đầu: đóng 50% HP. Rút tuần đầu kỳ 2: không đóng HP. Kỳ hè không áp dụng.",
+        "dieu_khoan": "Điều 10",
+        "gia_tri": "Điểm W; 7 tuần đầu: đóng 50% HP; tuần đầu kỳ 2: không đóng; kỳ hè: không áp dụng"
+      }
+    },
+    {
+      "id": "cac_chi_so_danh_gia_ket_qua_hoc_tap_hoc_ky",
+      "label": "Các chỉ số đánh giá kết quả học tập trong một học kỳ",
+      "type": "KhaiNiem",
+      "properties": {
+        "mo_ta": "Kết quả học tập trong học kỳ được đánh giá bằng 3 chỉ số (không tính NN cơ bản, GDTC, QPAN):\n(a) Số TC đạt trong kỳ\n(b) Số TC không đạt trong kỳ\n(c) Điểm trung bình học kỳ (GPA)\nKết quả từ đầu khóa: Số TCTL, TC nợ đọng, CPA.",
+        "dieu_khoan": "Điều 12",
+        "gia_tri": "3 chỉ số: TC đạt, TC không đạt, GPA; không tính NN/GDTC/QPAN"
+      }
+    },
+    {
+      "id": "dang_ky_tot_nghiep_bao_nhieu_tc_hon_yeu_cau",
+      "label": "Đăng ký tốt nghiệp được chọn nhiều hơn yêu cầu bao nhiêu tín chỉ",
+      "type": "QuyTrinh",
+      "properties": {
+        "mo_ta": "Sinh viên có thể đăng ký học nhiều hơn yêu cầu CTĐT nhưng khi đăng ký tốt nghiệp chỉ chọn đủ hoặc không nhiều hơn 3 TC so với yêu cầu CT. Các trường hợp ngoại lệ do HĐ xét TN quyết định và trình GĐ phê duyệt.",
+        "dieu_khoan": "Điều 14",
+        "gia_tri": "Chọn đủ hoặc không nhiều hơn +3 TC so yêu cầu CT"
+      }
+    },
+    {
+      "id": "sinh_vien_chua_tot_nghiep_duoc_cap_gi",
+      "label": "Sinh viên không tốt nghiệp được cấp chứng nhận gì",
+      "type": "QuyTrinh",
+      "properties": {
+        "mo_ta": "Sinh viên không tốt nghiệp được quyền đề nghị cấp chứng nhận các học phần đã tích lũy trong CTĐT. Thạc sĩ: trong thời hạn 5 năm kể từ ngày khóa học kết thúc.",
+        "dieu_khoan": "Điều 14, Điều 34",
+        "gia_tri": "Cấp chứng nhận HP đã tích lũy; ThS: trong 5 năm từ khi khóa học kết thúc"
+      }
+    },
+    {
+      "id": "tu_nguyen_thoi_hoc_co_duoc_quay_lai_khong",
+      "label": "Tự nguyện thôi học có được quay lại tiếp tục học không",
+      "type": "QuyTrinh",
+      "properties": {
+        "mo_ta": "Sinh viên tự nguyện thôi học: làm đơn đề nghị và được xem xét cho thôi học. Sau khi có QĐ thôi học KHÔNG được tiếp nhận trở lại. Khác với nghỉ TT (có thể trở lại). Nếu thi lại và trúng tuyển: phải học lại toàn bộ CT từ đầu.",
+        "dieu_khoan": "Điều 16",
+        "gia_tri": "Thôi học → không được tiếp nhận lại; muốn học lại phải thi tuyển sinh lại từ đầu"
+      }
+    },
+    {
+      "id": "ket_qua_hoc_tap_duoc_bao_luu_khi_chuyen_ct",
+      "label": "Kết quả học tập được bảo lưu khi chuyển chương trình đào tạo",
+      "type": "QuyTrinh",
+      "properties": {
+        "mo_ta": "Khi chuyển CTĐT hoặc hình thức đào tạo, kết quả HP đã tích lũy được xem xét bảo lưu và CN tương đương theo HP trong CT mới. Thời gian học toàn khóa tính từ khi trúng tuyển vào cơ sở đào tạo thứ nhất (với SV chuyển từ trường khác).",
+        "dieu_khoan": "Điều 17",
+        "gia_tri": "Kết quả HP được xem xét bảo lưu CN tương đương theo CT mới"
+      }
+    },
+    {
+      "id": "cap_hai_bang_tot_nghiep_dieu_kien",
+      "label": "Được cấp hai bằng tốt nghiệp khi học cùng lúc hai chương trình",
+      "type": "QuyTrinh",
+      "properties": {
+        "mo_ta": "Sinh viên học cùng lúc 2 CTĐT và được công nhận TN cả 2 sẽ được cấp 2 bằng TN và 2 phụ lục văn bằng. Điều kiện TN CT2: đủ điều kiện TN CT1 và đã đăng ký học CT2 muộn nhất 2 năm trước thời điểm xét TN.",
+        "dieu_khoan": "Điều 18",
+        "gia_tri": "TN cả 2 CT → cấp 2 bằng + 2 phụ lục; đăng ký CT2 trước ≤2 năm xét TN"
+      }
+    },
+    {
+      "id": "canh_bao_hoc_tap_khong_xet_ky_he",
+      "label": "Cảnh báo học tập không xét ở học kỳ hè chỉ xét kỳ chính",
+      "type": "KhaiNiem",
+      "properties": {
+        "mo_ta": "Cảnh báo học tập CHỈ được xét vào cuối mỗi học kỳ CHÍNH. Kết quả học kỳ hè KHÔNG được dùng để xét cảnh báo hay hạ cảnh báo. Kết quả kỳ hè được tính vào kỳ chính kế tiếp.",
+        "dieu_khoan": "Điều 19",
+        "gia_tri": "Chỉ xét cuối kỳ chính; kỳ hè không xét cảnh báo"
+      }
+    },
+    {
+      "id": "datn_ky_su_gan_lien_thuc_tap_doanh_nghiep",
+      "label": "Đồ án tốt nghiệp kỹ sư gắn liền với thực tập doanh nghiệp",
+      "type": "QuyTrinh",
+      "properties": {
+        "mo_ta": "Thực tập tốt nghiệp KS được thực hiện tại doanh nghiệp, đảm bảo thời lượng theo quy định. Đề tài ĐATN KS gắn liền với nội dung thực tập hoặc giải quyết vấn đề thực tế từ doanh nghiệp. Được đánh giá theo khoản 2 Điều 13, đạt từ C.",
+        "dieu_khoan": "Điều 22",
+        "gia_tri": "Thực tập tại DN + ĐATN gắn với thực tế DN; đánh giá như Điều 13; đạt từ C"
+      }
+    },
+    {
+      "id": "cong_nhan_tc_thac_si_toi_da_bao_nhieu_hieu_luc",
+      "label": "Công nhận tín chỉ thạc sĩ tối đa bao nhiêu TC hiệu lực mấy năm",
+      "type": "DieuKien",
+      "properties": {
+        "mo_ta": "Công nhận và chuyển đổi TC cho học viên ThS:\n- Tối đa 30 TC được công nhận trong toàn khóa\n- Hiệu lực 5 năm\n- HP được CN phải đạt từ C (hoặc tương đương) trở lên\n- HP được CN không tính vào CPA toàn khóa khi xếp hạng TN\n- Học trước max 15 TC HP ThS khi còn học CT tích hợp CN-ThS",
+        "dieu_khoan": "Điều 28",
+        "gia_tri": "Max 30 TC; hiệu lực 5 năm; đạt từ C; không tính CPA TN; học trước max 15 TC"
+      }
+    },
+    {
+      "id": "dang_ky_de_tai_luan_van_thac_si_khi_nao_the_nao",
+      "label": "Đăng ký đề tài luận văn thạc sĩ khi nào thế nào thay đổi được không",
+      "type": "QuyTrinh",
+      "properties": {
+        "mo_ta": "Đăng ký đề tài LV ThS trong học kỳ ĐẦU của khóa học bằng 2 cách: (1) chọn từ danh mục trường đề xuất, (2) tự đề xuất tên đề tài + đề cương + người HD. Sau khi nhận QĐ: xây dựng kế hoạch thực hiện LV được HD đồng ý. Thay đổi đề tài/HD: tối thiểu trước 6 tháng so với hết hạn đào tạo.",
+        "dieu_khoan": "Điều 29",
+        "gia_tri": "Kỳ đầu khóa; thay đổi đề tài/HD: trước ≥6 tháng hết hạn"
+      }
+    },
+    {
+      "id": "diem_luan_van_thac_si_tinh_the_nao_bao_ve_thuong",
+      "label": "Điểm luận văn thạc sĩ tính thế nào điểm bảo vệ thưởng công bố",
+      "type": "KhaiNiem",
+      "properties": {
+        "mo_ta": "Điểm luận văn ThS = Điểm bảo vệ + Điểm thưởng CBKH (nếu có).\nĐiểm BV = TB điểm các TV HĐ có mặt, làm tròn 2 chữ số, mỗi TV chấm thang 10 lẻ tới 0.5.\nĐiểm BV ≥8.5 CHỈ khi có CBKH liên quan LV.\nĐiểm thưởng CBKH: 0.5 – 1.5 do HĐ quyết định.",
+        "dieu_khoan": "Điều 32",
+        "gia_tri": "= BV + thưởng CBKH; BV = TB TV HĐ (0.5); ≥8.5 cần CBKH; thưởng 0.5-1.5"
+      }
+    },
+    {
+      "id": "ncs_xay_dung_ke_hoach_hoc_tap_nghien_cuu_nhu_the_nao",
+      "label": "NCS xây dựng kế hoạch học tập nghiên cứu như thế nào báo cáo ai",
+      "type": "QuyTrinh",
+      "properties": {
+        "mo_ta": "NCS xây dựng kế hoạch chi tiết theo từng học kỳ và năm học dựa trên kế hoạch chuẩn toàn khóa TS. Báo cáo đơn vị chuyên môn và người hướng dẫn thông qua. Phải tham gia sinh hoạt KH định kỳ tại đơn vị CM. Báo cáo tiến độ 6 tháng/lần tại hội thảo KH và nộp Ban Đào tạo.",
+        "dieu_khoan": "Điều 37",
+        "gia_tri": "Kế hoạch chi tiết từng kỳ/năm; báo cáo tiến độ 6 tháng; sinh hoạt KH định kỳ"
+      }
+    },
+    {
+      "id": "hoc_phan_bo_sung_tien_si_bao_nhieu_tc_ai_phai_hoc",
+      "label": "Học phần bổ sung tiến sĩ bao nhiêu tín chỉ ai phải học điều kiện",
+      "type": "DieuKien",
+      "properties": {
+        "mo_ta": "HP bổ sung hỗ trợ NCS có đủ kiến thức thực hiện đề tài:\n- NCS có bằng ThS: tối thiểu 4 TC (2 HP) bổ sung\n- NCS chưa có bằng ThS: toàn bộ HP của CTĐT ThS định hướng NC (trừ luận văn)\nHoàn thành tất cả HP bổ sung và HP TS trong 2 năm từ QĐ công nhận NCS.\nHP bổ sung không tính vào HP TS. HP bổ sung và HP TS đạt từ C.",
+        "dieu_khoan": "Điều 38",
+        "gia_tri": "Có ThS: min 4 TC (2 HP); chưa ThS: toàn bộ HP ThS NC; hoàn thành trong 2 năm; đạt từ C"
+      }
+    },
+    {
+      "id": "yeu_cau_bai_bao_khoa_hoc_de_bao_ve_luan_an_tien_si",
+      "label": "Yêu cầu bài báo khoa học để bảo vệ luận án tiến sĩ ISI Scopus điểm",
+      "type": "DieuKien",
+      "properties": {
+        "mo_ta": "Yêu cầu bài báo để bảo vệ LA cấp cơ sở (Điều 41):\nPhương án 1: Tối thiểu 2 bài báo:\n- 1 bài đăng tạp chí ISI-Scopus\n- 1 bài đăng tạp chí HĐ GS Nhà nước điểm ≥0.75 theo ngành\nPhương án 2: Tối thiểu 2 bài báo quốc tế có phản biện HĐ GS điểm ≥0.75\nTổng điểm tất cả công trình ≥2.0 (không chia khi có đồng tác giả).\nTác giả chính: đứng tên đầu hoặc tác giả liên hệ duy nhất.",
+        "dieu_khoan": "Điều 41",
+        "gia_tri": "PA1: 1 ISI-Scopus + 1 HĐ GS ≥0.75; PA2: 2 bài QT HĐ GS ≥0.75; tổng điểm ≥2.0"
+      }
+    },
+    {
+      "id": "thoi_gian_cap_bang_tien_si_bao_nhieu_ngay",
+      "label": "Thời gian cấp bằng tiến sĩ bao nhiêu ngày làm việc từ khi nào",
+      "type": "QuyTrinh",
+      "properties": {
+        "mo_ta": "Sau khi NCS đủ điều kiện TN, GĐ ĐHBK ra QĐ công nhận trình độ TS và cấp bằng trong 30 ngày làm việc kể từ ngày QĐ công nhận có hiệu lực. Cần tham vấn ý kiến HĐ KH và đào tạo Đại học trước khi ra QĐ.",
+        "dieu_khoan": "Điều 44",
+        "gia_tri": "30 ngày làm việc từ QĐ công nhận trình độ TS"
+      }
+    },
+    {
+      "id": "thay_doi_de_tai_luan_an_nguoi_huong_dan_ncs_khi_nao",
+      "label": "Thay đổi đề tài luận án người hướng dẫn NCS được không khi nào",
+      "type": "QuyTrinh",
+      "properties": {
+        "mo_ta": "Thay đổi đề tài LA: chỉ được trong nửa thời gian đầu của CTĐT TS.\nThay đổi người hướng dẫn: phải thực hiện trước 12 tháng tính đến ngày kết thúc khóa đào tạo TS (kể cả gia hạn), trừ trường hợp bất khả kháng.\nRút ngắn thời gian học: GĐ xem xét cho rút tối đa không quá 1 năm nếu hoàn thành sớm.",
+        "dieu_khoan": "Điều 45",
+        "gia_tri": "Đề tài: trong nửa đầu CT; HD: trước 12 tháng kết thúc; Rút ngắn: max 1 năm"
+      }
+    },
+    {
+      "id": "ket_qua_hoc_phan_tien_si_duoc_bao_luu_khi_nao",
+      "label": "Kết quả học phần tiến sĩ được bảo lưu công nhận khi nào chuyển ngành",
+      "type": "DieuKien",
+      "properties": {
+        "mo_ta": "Kết quả HP TS được bảo lưu và CN trong các trường hợp:\n(1) NCS bị thôi học muốn học ThS ngành tương ứng\n(2) NCS chuyển ngành hoặc cơ sở đào tạo\n(3) NCS đã thôi học, đăng ký dự tuyển lại thành NCS mới\nĐiều kiện: HP đạt từ C; hiệu lực 5 năm; chuyển cơ sở/NCS mới: tối đa 50% tổng HP TS trong CT.",
+        "dieu_khoan": "Điều 46",
+        "gia_tri": "Đạt từ C; hiệu lực 5 năm; chuyển cơ sở/mới: max 50% HP TS"
+      }
+    },
+    {
+      "id": "quy_dinh_chuyen_tiep_ncs_truoc_sau_2021_2025",
+      "label": "Quy định chuyển tiếp NCS tuyển sinh trước sau năm 2021 2025 áp dụng thông tư nào",
+      "type": "KhaiNiem",
+      "properties": {
+        "mo_ta": "Quy định chuyển tiếp theo thời điểm tuyển sinh:\n- Sau 01/8/2025: áp dụng TT18/2021 và Quy chế này\n- 15/8/2021 – 01/8/2025: áp dụng TT18/2021 và QĐ 3095/QĐ-ĐHBK-ĐT ngày 22/12/2021\n- Trước 15/8/2021: áp dụng TT08/2017 và QĐ 2764/QĐ-ĐHBK-SĐH ngày 28/8/2017",
+        "dieu_khoan": "Điều 47",
+        "gia_tri": "Sau 8/2025: TT18+QC mới; 2021-2025: TT18+QĐ3095; Trước 2021: TT08+QĐ2764"
+      }
+    },
+    {
+      "id": "quy_che_co_hieu_luc_tu_khi_nao_thay_the_gi",
+      "label": "Quy chế có hiệu lực từ khi nào thay thế quy chế nào năm học 2025 2026",
+      "type": "KhaiNiem",
+      "properties": {
+        "mo_ta": "Quy chế QCDT_2025 có hiệu lực từ học kỳ 1 năm học 2025-2026, thay thế Quy chế đào tạo ban hành theo QĐ 4600/QĐ-ĐHBK ngày 09/6/2023. Một số điều áp dụng từ thời điểm khác: Điều 15a (khóa 2022), Điều 17 khoản 1-3 (từ HK2 2024-2025), Điều 18 khoản 2 (khóa 2022), Điều 24 khoản 1 (từ HK2 2024-2025).",
+        "dieu_khoan": "Điều 48",
+        "gia_tri": "Hiệu lực từ HK1 2025-2026; thay QĐ 4600/2023; Điều 15a/18: từ khóa 2022; Điều 17/24: từ HK2 2024-2025"
+      }
+    },
+    {
+      "id": "thoi_gian_dao_tao_chuan_bao_nhieu_nam",
+      "label": "Thời gian đào tạo chuẩn bao nhiêu năm tín chỉ cử nhân kỹ sư thạc sĩ tiến sĩ",
+      "type": "KhaiNiem",
+      "properties": {
+        "mo_ta": "Thời gian và khối lượng đào tạo chuẩn (chính quy, không kể HP bổ sung):\n- Cử nhân: 4 năm, tối thiểu 132 TC\n- Kỹ sư (từ CN tích hợp): 1.5 năm, 48 TC\n- Kỹ sư (từ CN thường): 2 năm, 60 TC\n- Thạc sĩ (từ CN): 2 năm, 60 TC\n- Thạc sĩ (từ CN tích hợp): 1.5 năm, 48 TC\n- Tiến sĩ (từ ThS): 3 năm, 106 TC\n- Tiến sĩ (từ ĐH): 4 năm, 151 TC\nVLVH: dài hơn chính quy ≥20%",
+        "dieu_khoan": "Điều 2, Điều 3",
+        "gia_tri": "CN: 4n/132TC; KS tích hợp: 1.5n/48TC; KS: 2n/60TC; ThS: 2n/60TC; TS từ ThS: 3n/106TC; TS từ ĐH: 4n/151TC"
+      }
+    },
+    {
+      "id": "hoc_phan_la_gi_tin_chi_la_gi_dinh_nghia",
+      "label": "Học phần là gì tín chỉ là gì định nghĩa",
+      "type": "KhaiNiem",
+      "properties": {
+        "mo_ta": "Tín chỉ (TC): đơn vị đo khối lượng học tập. 1 TC = 50 giờ học tập định mức (gồm giờ giảng, tự học, nghiên cứu). Trên lớp: 15 giờ giảng hoặc 30 giờ thực hành = 1 TC.\nHọc phần: đơn vị cấu thành CT học tập, thực hiện trọn vẹn trong 1 học kỳ. Khối lượng 1-4 TC (trừ thực tập, ĐATN, LV, LA). Mỗi HP có mã số riêng.",
+        "dieu_khoan": "Điều 4",
+        "gia_tri": "1TC = 50 giờ; lớp: 15h giảng/TC; HP: 1-4TC, 1 học kỳ"
+      }
+    },
+    {
+      "id": "pham_vi_ap_dung_quy_che_doi_tuong_nao",
+      "label": "Quy chế áp dụng cho đối tượng nào sinh viên học viên nghiên cứu sinh",
+      "type": "KhaiNiem",
+      "properties": {
+        "mo_ta": "Quy chế đào tạo ĐHBK Hà Nội 2025 áp dụng cho:\n- Sinh viên đại học (chương trình cử nhân)\n- Học viên chương trình thạc sĩ\n- Học viên chương trình kỹ sư (kỹ sư chuyên sâu)\n- Nghiên cứu sinh (NCS)\nHình thức: chính quy và vừa làm vừa học (VLVH)\nCấp bằng: cử nhân, kỹ sư, thạc sĩ, tiến sĩ",
+        "dieu_khoan": "Điều 1",
+        "gia_tri": "Áp dụng: SV cử nhân, HV ThS, HV kỹ sư, NCS; Hình thức: CQ và VLVH"
+      }
+    },
+    {
+      "id": "dieu_kien_nhan_hoc_bong_lien_quan_gpa_cpa",
+      "label": "GPA CPA bao nhiêu được xếp loại giỏi xuất sắc học bổng",
+      "type": "KhaiNiem",
+      "properties": {
+        "mo_ta": "Xếp loại học lực theo GPA (học kỳ) hoặc CPA (tích lũy):\n- Kém: < 1.0\n- Yếu: 1.0 – 1.99\n- Trung bình: 2.0 – 2.49\n- Khá: 2.5 – 3.19\n- Giỏi: 3.2 – 3.59\n- Xuất sắc: 3.6 – 4.0\nCPA ≥ 2.0 để tốt nghiệp; CPA ≥ 2.5 để chuyển CT; CPA ≥ 3.2 vào CT Tài năng.",
+        "dieu_khoan": "Điều 12",
+        "gia_tri": "Kém<1.0; Yếu 1.0-1.99; TB 2.0-2.49; Khá 2.5-3.19; Giỏi 3.2-3.59; XS 3.6-4.0"
+      }
+    },
+    {
+      "id": "hoc_phan_tuong_duong_la_gi_dieu_kien_hoc_thay",
+      "label": "Học phần tương đương là gì điều kiện học thay thế cải thiện điểm",
+      "type": "KhaiNiem",
+      "properties": {
+        "mo_ta": "Hai HP tương đương khi nội dung trùng lặp ≥70%. SV được học HP tương đương để lấy kết quả thay HP yêu cầu trong CTĐT, với điều kiện TC HP tương đương ≥ TC HP yêu cầu. Cũng áp dụng khi muốn cải thiện CPA. Khác HP thay thế: HP thay thế do trường chỉ định khi HP gốc không còn dạy.",
+        "dieu_khoan": "Điều 4, Điều 5",
+        "gia_tri": "Trùng ≥70% nội dung; TC tương đương ≥ TC gốc; dùng để học thay hoặc cải thiện CPA"
+      }
+    },
+    {
+      "id": "diem_cuoi_ky_thi_mot_lan_khong_co_thi_lai",
+      "label": "Thi cuối kỳ một lần không có thi lại phải làm gì nếu trượt",
+      "type": "KhaiNiem",
+      "properties": {
+        "mo_ta": "Người học chỉ được thi cuối kỳ MỘT LẦN cho mỗi HP đã đăng ký (kể cả có điểm QT là điểm liệt). KHÔNG có lần thi lại thông thường. Nếu không đạt: phải đăng ký học lại HP đó ở kỳ sau. Hoãn thi (lý do chính đáng): được thi trong 2 kỳ chính tiếp theo.",
+        "dieu_khoan": "Điều 6",
+        "gia_tri": "1 lần thi/HP; không có thi lại; trượt → học lại; hoãn thi → thi trong 2 kỳ tiếp"
+      }
+    },
+    {
+      "id": "hoc_ky_chinh_hoc_ky_he_khac_nhau_the_nao",
+      "label": "Học kỳ chính và học kỳ hè khác nhau thế nào số tín chỉ thời gian",
+      "type": "KhaiNiem",
+      "properties": {
+        "mo_ta": "Năm học gồm 2 học kỳ chính và 1 học kỳ hè:\n- Học kỳ chính: ĐH tối đa 24 TC, tối thiểu 12 TC; ThS CQ tối đa 24 TC\n- Học kỳ hè: tổ chức theo nhu cầu và khả năng bố trí GV; ĐH tối đa 8 TC\n- Kỳ hè KHÔNG xét cảnh báo học tập\n- Kết quả kỳ hè tính vào kỳ chính kế tiếp\n- Không có đợt điều chỉnh đăng ký trong kỳ hè",
+        "dieu_khoan": "Điều 3, Điều 10",
+        "gia_tri": "2 kỳ chính + 1 kỳ hè; kỳ hè: max 8 TC; không xét cảnh báo; không điều chỉnh đăng ký"
+      }
+    },
+    {
+      "id": "bao_ve_luan_an_cap_dai_hoc_dieu_kien_thu_tuc",
+      "label": "Bảo vệ luận án cấp Đại học điều kiện thủ tục phản biện độc lập công khai",
+      "type": "QuyTrinh",
+      "properties": {
+        "mo_ta": "Điều kiện BV LA cấp ĐH:\n(a) LA được đơn vị CM đề nghị đưa ra HĐ cấp ĐH\n(b) Các phản biện độc lập đồng ý cho phép BV\nThủ tục trước BV cấp ĐH:\n- Gửi toàn văn + tóm tắt LA cho PB độc lập lấy ý kiến\n- NCS hoàn thành tiếp thu ý kiến PB trong 15 ngày\n- Công bố công khai thông tin BV trên web ĐHBK ≥7 ngày trước ngày BV\nKết quả: Bỏ phiếu ĐY/KĐY; không đạt nếu ≥2 TV bỏ phiếu KĐY.",
+        "dieu_khoan": "Điều 41, Điều 42",
+        "gia_tri": "PB độc lập → tiếp thu 15 ngày → công khai ≥7 ngày; <2 phiếu chống → đạt"
+      }
+    },
+    {
+      "id": "gia_han_thoi_gian_hoc_tien_si_ncs_dieu_kien",
+      "label": "Gia hạn thời gian học tiến sĩ NCS điều kiện thủ tục bao lâu",
+      "type": "QuyTrinh",
+      "properties": {
+        "mo_ta": "NCS không hoàn thành LA đúng hạn: phải làm thủ tục xin gia hạn TRƯỚC 60 ngày khi hết hạn.\nĐiều kiện để được gia hạn: đã hoàn thành tiểu luận TQ + HP bổ sung (nếu có) + HP tiến sĩ + chuyên đề TS + đủ nghĩa vụ tài chính.\nGia hạn: tối đa 2 lần, mỗi lần ≥6 tháng, tổng ≤24 tháng.\nQuá thời hạn không hoàn thành → bị buộc thôi học.",
+        "dieu_khoan": "Điều 3, Điều 45",
+        "gia_tri": "Trước 60 ngày; max 2 lần x ≥6 tháng; tổng max 24 tháng; quá hạn → buộc thôi học"
+      }
+    },
+    {
+      "id": "thi_viet_thi_van_dap_hinh_thuc_danh_gia_cuoi_ky",
+      "label": "Hình thức thi cuối kỳ thi viết vấn đáp trực tuyến quy định",
+      "type": "KhaiNiem",
+      "properties": {
+        "mo_ta": "Hình thức đánh giá cuối kỳ quy định trong đề cương chi tiết HP. Thi trực tuyến được áp dụng khi đảm bảo trung thực, công bằng như trực tiếp và được quy định bằng văn bản riêng. Thi vấn đáp hoặc đánh giá trước HĐ: KHÔNG áp dụng phúc tra/khiếu nại điểm.",
+        "dieu_khoan": "Điều 5, Điều 6",
+        "gia_tri": "Hình thức theo đề cương; trực tuyến được áp dụng nếu đảm bảo; vấn đáp: không phúc tra"
+      }
+    },
+    {
+      "id": "thac_si_dang_ky_tc_moi_ky_moi_nam_cq_vlvh",
+      "label": "Thạc sĩ chính quy VLVH đăng ký tối đa 24 TC 45 TC 20 TC 30 TC mỗi kỳ mỗi năm",
+      "type": "KhaiNiem",
+      "properties": {
+        "mo_ta": "Số TC tối đa thạc sĩ được đăng ký theo từng hình thức:\nChính quy (CQ):\n- Mỗi học kỳ: tối đa 24 TC\n- Mỗi năm học: không quá 45 TC\nVừa làm vừa học (VLVH):\n- Mỗi học kỳ: tối đa 20 TC\n- Mỗi năm học: không quá 30 TC\nKỳ cuối khóa: không áp dụng giới hạn TC/kỳ nhưng vẫn ≤ giới hạn năm",
+        "dieu_khoan": "Điều 27",
+        "gia_tri": "CQ: 24TC/kỳ, 45TC/năm; VLVH: 20TC/kỳ, 30TC/năm; kỳ cuối không giới hạn/kỳ"
+      }
+    },
+    {
+      "id": "bao_ve_luan_van_ths_ngoai_ngu_bac_4_nguoi_huong_dan_xac_nhan",
+      "label": "Điều kiện bảo vệ luận văn thạc sĩ ngoại ngữ bậc 4/6 khung 6 bậc người hướng dẫn phản biện xác nhận",
+      "type": "DieuKien",
+      "properties": {
+        "mo_ta": "Ba điều kiện để được bảo vệ luận văn thạc sĩ (Điều 31):\n(1) Hoàn thành và đạt các HP theo yêu cầu CTĐT\n(2) Đạt chuẩn ngoại ngữ bậc 4/6 Khung 6 bậc Việt Nam (hoặc tương đương)\n(3) Người hướng dẫn (HD) và người phản biện (PB) xác nhận luận văn đủ chất lượng bảo vệ",
+        "dieu_khoan": "Điều 31",
+        "gia_tri": "Bậc 4/6 Khung 6 bậc VN; HD và PB xác nhận; hoàn thành HP CTĐT"
+      }
+    },
+    {
+      "id": "hang_tot_nghiep_giam_hoc_lai_5_phan_tram_ky_luat_canh_cao",
+      "label": "Hạng tốt nghiệp giảm 1 mức khi học lại 5 phần trăm tín chỉ hoặc kỷ luật cảnh cáo khóa 2022",
+      "type": "DieuKien",
+      "properties": {
+        "mo_ta": "Từ khóa tuyển sinh 2022, hạng TN giỏi trở lên bị giảm 1 mức khi:\n(a) Học lại > 5% tổng TC HP dùng tính điểm TB toàn khóa (không tính HP cải thiện)\n(b) Bị kỷ luật từ mức cảnh cáo trở lên trong chương trình ĐH",
+        "dieu_khoan": "Điều 15",
+        "gia_tri": "Học lại >5% TC → giảm 1 mức; kỷ luật ≥ cảnh cáo → giảm 1 mức; từ khóa 2022"
       }
     }
   ],
@@ -4500,6 +5060,798 @@
       "relation": "dan_den",
       "properties": {
         "mo_ta": "TC nợ đọng > 24 dẫn đến cảnh báo mức 3"
+      }
+    },
+    {
+      "from": "bang_thang_diem_chu_f_d_c_b_a",
+      "to": "thang_diem_chu",
+      "relation": "mo_ta",
+      "properties": {
+        "mo_ta": "Bảng chi tiết thang điểm chữ"
+      }
+    },
+    {
+      "from": "bang_thang_diem_chu_f_d_c_b_a",
+      "to": "diem_hoc_phan",
+      "relation": "quy_doi",
+      "properties": {
+        "mo_ta": "Điểm HP thang 10 quy đổi sang điểm chữ"
+      }
+    },
+    {
+      "from": "vang_mat_tru_cong_diem_qua_trinh_bao_nhieu",
+      "to": "diem_qua_trinh",
+      "relation": "anh_huong",
+      "properties": {
+        "mo_ta": "Vắng mặt cộng/trừ vào điểm quá trình"
+      }
+    },
+    {
+      "from": "vang_mat_tru_cong_diem_qua_trinh_bao_nhieu",
+      "to": "vang_mat_anh_huong_diem",
+      "relation": "mo_ta",
+      "properties": {
+        "mo_ta": "Mô tả chi tiết ảnh hưởng của vắng mặt"
+      }
+    },
+    {
+      "from": "phuc_tra_diem_trong_bao_nhieu_ngay_thoi_han",
+      "to": "phuc_tra_khieu_nai_diem",
+      "relation": "mo_ta",
+      "properties": {
+        "mo_ta": "Chi tiết thời hạn phúc tra điểm"
+      }
+    },
+    {
+      "from": "phuc_tra_diem_trong_bao_nhieu_ngay_thoi_han",
+      "to": "diem_hoc_phan",
+      "relation": "lien_quan",
+      "properties": {
+        "mo_ta": "Phúc tra liên quan đến điểm học phần"
+      }
+    },
+    {
+      "from": "hang_tot_nghiep_thac_si_xuat_sac_gioi_kha_tb",
+      "to": "hang_tot_nghiep_thac_si",
+      "relation": "mo_ta",
+      "properties": {
+        "mo_ta": "Chi tiết các mức hạng TN thạc sĩ"
+      }
+    },
+    {
+      "from": "hang_tot_nghiep_thac_si_xuat_sac_gioi_kha_tb",
+      "to": "cpa",
+      "relation": "quyet_dinh",
+      "properties": {
+        "mo_ta": "CPA toàn khóa quyết định hạng TN ThS"
+      }
+    },
+    {
+      "from": "hoi_dong_bao_ve_luan_an_tien_si_may_thanh_vien",
+      "to": "bao_ve_luan_an_co_so",
+      "relation": "mo_ta",
+      "properties": {
+        "mo_ta": "Chi tiết thành phần và thời gian HĐ bảo vệ cơ sở"
+      }
+    },
+    {
+      "from": "hoi_dong_bao_ve_luan_an_tien_si_may_thanh_vien",
+      "to": "bao_ve_luan_an_cap_dh",
+      "relation": "lien_quan",
+      "properties": {
+        "mo_ta": "HĐ cấp ĐH cũng 7 thành viên"
+      }
+    },
+    {
+      "from": "cach_tinh_diem_do_an_tot_nghiep_datn_cong_thuc",
+      "to": "do_an_tot_nghiep_cn",
+      "relation": "mo_ta",
+      "properties": {
+        "mo_ta": "Công thức chi tiết tính điểm ĐATN"
+      }
+    },
+    {
+      "from": "cach_tinh_diem_do_an_tot_nghiep_datn_cong_thuc",
+      "to": "nguoi_huong_dan",
+      "relation": "lien_quan",
+      "properties": {
+        "mo_ta": "HD cho điểm ĐATN"
+      }
+    },
+    {
+      "from": "cach_tinh_diem_do_an_tot_nghiep_datn_cong_thuc",
+      "to": "nguoi_phan_bien",
+      "relation": "lien_quan",
+      "properties": {
+        "mo_ta": "PB cho điểm ĐATN"
+      }
+    },
+    {
+      "from": "hoan_thi_cuoi_ky_quy_trinh_thoi_han_dieu_kien",
+      "to": "hoan_thi",
+      "relation": "mo_ta",
+      "properties": {
+        "mo_ta": "Chi tiết quy trình hoãn thi cuối kỳ"
+      }
+    },
+    {
+      "from": "hoan_thi_cuoi_ky_quy_trinh_thoi_han_dieu_kien",
+      "to": "diem_hoc_phan",
+      "relation": "anh_huong",
+      "properties": {
+        "mo_ta": "Hoãn thi ảnh hưởng đến điểm HP"
+      }
+    },
+    {
+      "from": "xep_hang_trinh_do_nam_hoc_theo_so_tin_chi_tich_luy",
+      "to": "xep_hang_nam_hoc",
+      "relation": "mo_ta",
+      "properties": {
+        "mo_ta": "Chi tiết bảng xếp hạng năm học theo TCTL"
+      }
+    },
+    {
+      "from": "xep_hang_trinh_do_nam_hoc_theo_so_tin_chi_tich_luy",
+      "to": "so_tc_tich_luy",
+      "relation": "quyet_dinh",
+      "properties": {
+        "mo_ta": "TCTL quyết định xếp hạng năm học"
+      }
+    },
+    {
+      "from": "dieu_kien_chuyen_chuong_trinh_cpa_nam_thu_nhat",
+      "to": "chuyen_chuong_trinh",
+      "relation": "mo_ta",
+      "properties": {
+        "mo_ta": "Điều kiện chi tiết để chuyển CTĐT"
+      }
+    },
+    {
+      "from": "dieu_kien_chuyen_chuong_trinh_cpa_nam_thu_nhat",
+      "to": "cpa",
+      "relation": "yeu_cau",
+      "properties": {
+        "mo_ta": "CPA ≥ 2.5 để chuyển CT"
+      }
+    },
+    {
+      "from": "dieu_kien_tot_nghiep_thac_si_nop_luan_van_thu_vien",
+      "to": "dieu_kien_tot_nghiep_thac_si",
+      "relation": "mo_ta",
+      "properties": {
+        "mo_ta": "Chi tiết 4 điều kiện TN ThS"
+      }
+    },
+    {
+      "from": "dieu_kien_tot_nghiep_thac_si_nop_luan_van_thu_vien",
+      "to": "thu_vien_ta_quang_buu",
+      "relation": "yeu_cau",
+      "properties": {
+        "mo_ta": "Nộp LV cho TV TQB trong 20 ngày"
+      }
+    },
+    {
+      "from": "tieu_luan_tong_quan_ncs_hoan_thanh_bao_lau_dieu_kien",
+      "to": "tieu_luan_tong_quan",
+      "relation": "mo_ta",
+      "properties": {
+        "mo_ta": "Chi tiết yêu cầu và thời hạn tiểu luận TQ"
+      }
+    },
+    {
+      "from": "buoc_thoi_hoc_sinh_vien_canh_bao_muc_3_lan_hai",
+      "to": "buoc_thoi_hoc",
+      "relation": "mo_ta",
+      "properties": {
+        "mo_ta": "Chi tiết 2 trường hợp buộc thôi học SV ĐH"
+      }
+    },
+    {
+      "from": "buoc_thoi_hoc_sinh_vien_canh_bao_muc_3_lan_hai",
+      "to": "canh_bao_muc_3",
+      "relation": "dan_den",
+      "properties": {
+        "mo_ta": "Cảnh báo mức 3 x2 liên tiếp → buộc thôi học"
+      }
+    },
+    {
+      "from": "so_tin_chi_toi_thieu_de_tot_nghiep_cu_nhan",
+      "to": "ctdt_cu_nhan",
+      "relation": "quy_dinh",
+      "properties": {
+        "mo_ta": "132 TC tối thiểu để TN cử nhân"
+      }
+    },
+    {
+      "from": "so_tin_chi_toi_thieu_de_tot_nghiep_cu_nhan",
+      "to": "chuong_trinh_dao_tao",
+      "relation": "thuoc",
+      "properties": {
+        "mo_ta": "Khối lượng tối thiểu của các CTĐT"
+      }
+    },
+    {
+      "from": "chuong_trinh_tich_hop_cu_nhan_ky_su_thac_si_thoi_gian",
+      "to": "ctdt_tich_hop",
+      "relation": "mo_ta",
+      "properties": {
+        "mo_ta": "Chi tiết CT tích hợp CN-KS/ThS"
+      }
+    },
+    {
+      "from": "diem_trung_binh_tich_luy_toan_khoa_xet_tot_nghiep",
+      "to": "diem_tb_toan_khoa",
+      "relation": "mo_ta",
+      "properties": {
+        "mo_ta": "Cách tính điểm TB toàn khóa để xét TN"
+      }
+    },
+    {
+      "from": "sinh_vien_duoc_tot_nghiep_som_hon_cham_hon",
+      "to": "cham_tien_do",
+      "relation": "lien_quan",
+      "properties": {
+        "mo_ta": "Quy định TN sớm/chậm liên quan chậm tiến độ"
+      }
+    },
+    {
+      "from": "hoc_phan_duoc_mien_hoc_cong_nhan_diem_r",
+      "to": "diem_R",
+      "relation": "mo_ta",
+      "properties": {
+        "mo_ta": "Giải thích điểm R - miễn học công nhận TC"
+      }
+    },
+    {
+      "from": "hoc_phan_duoc_mien_hoc_cong_nhan_diem_r",
+      "to": "so_tc_tich_luy",
+      "relation": "tinh_vao",
+      "properties": {
+        "mo_ta": "Điểm R tính vào TCTL nhưng không tính GPA"
+      }
+    },
+    {
+      "from": "khung_diem_gpa_cpa_quy_doi_thang_10_cong_thuc",
+      "to": "quy_doi_thang_4_sang_10",
+      "relation": "mo_ta",
+      "properties": {
+        "mo_ta": "Công thức chi tiết quy đổi thang 4 sang thang 10"
+      }
+    },
+    {
+      "from": "ncs_bi_buoc_thoi_hoc_truong_hop_nao",
+      "to": "buoc_thoi_hoc_ncs",
+      "relation": "mo_ta",
+      "properties": {
+        "mo_ta": "Chi tiết 3 trường hợp buộc thôi học NCS"
+      }
+    },
+    {
+      "from": "diem_dat_la_bao_nhieu_cu_nhan_thac_si",
+      "to": "diem_hoc_phan",
+      "relation": "mo_ta",
+      "properties": {
+        "mo_ta": "Quy định điểm đạt theo bậc đào tạo"
+      }
+    },
+    {
+      "from": "diem_dat_la_bao_nhieu_cu_nhan_thac_si",
+      "to": "thang_diem_chu",
+      "relation": "lien_quan",
+      "properties": {
+        "mo_ta": "Điểm đạt liên quan đến thang điểm chữ"
+      }
+    },
+    {
+      "from": "diem_hoc_phan_duoc_tinh_the_nao",
+      "to": "diem_hoc_phan",
+      "relation": "mo_ta",
+      "properties": {
+        "mo_ta": "Cách tính điểm học phần từ các thành phần"
+      }
+    },
+    {
+      "from": "so_tc_tich_luy_tinh_the_nao_bao_gom_gi",
+      "to": "so_tc_tich_luy",
+      "relation": "mo_ta",
+      "properties": {
+        "mo_ta": "Chi tiết cách tính TCTL"
+      }
+    },
+    {
+      "from": "hoc_phi_nop_tre_bi_gi_dinh_chi",
+      "to": "hoc_phi",
+      "relation": "dan_den",
+      "properties": {
+        "mo_ta": "Nộp HP trễ → đình chỉ đăng ký"
+      }
+    },
+    {
+      "from": "rut_dang_ky_hoc_phan_sau_bao_lau_dieu_chinh",
+      "to": "rut_dang_ky_hoc_phan",
+      "relation": "mo_ta",
+      "properties": {
+        "mo_ta": "Quy trình và hậu quả rút đăng ký HP"
+      }
+    },
+    {
+      "from": "cac_chi_so_danh_gia_ket_qua_hoc_tap_hoc_ky",
+      "to": "gpa",
+      "relation": "bao_gom",
+      "properties": {
+        "mo_ta": "GPA là 1 trong 3 chỉ số đánh giá kết quả kỳ"
+      }
+    },
+    {
+      "from": "dang_ky_tot_nghiep_bao_nhieu_tc_hon_yeu_cau",
+      "to": "xet_tot_nghiep_dai_hoc",
+      "relation": "lien_quan",
+      "properties": {
+        "mo_ta": "Quy định chọn TC khi đăng ký TN"
+      }
+    },
+    {
+      "from": "ket_qua_hoc_tap_duoc_bao_luu_khi_chuyen_ct",
+      "to": "chuyen_chuong_trinh",
+      "relation": "lien_quan",
+      "properties": {
+        "mo_ta": "Kết quả được xét bảo lưu khi chuyển CT"
+      }
+    },
+    {
+      "from": "cap_hai_bang_tot_nghiep_dieu_kien",
+      "to": "hoc_hai_ctdt",
+      "relation": "dan_den",
+      "properties": {
+        "mo_ta": "TN cả 2 CT → được cấp 2 bằng"
+      }
+    },
+    {
+      "from": "canh_bao_hoc_tap_khong_xet_ky_he",
+      "to": "canh_bao_hoc_tap",
+      "relation": "lien_quan",
+      "properties": {
+        "mo_ta": "Lưu ý kỳ hè không xét cảnh báo"
+      }
+    },
+    {
+      "from": "datn_ky_su_gan_lien_thuc_tap_doanh_nghiep",
+      "to": "do_an_tot_nghiep_ky_su",
+      "relation": "mo_ta",
+      "properties": {
+        "mo_ta": "ĐATN KS gắn với thực tập tại DN"
+      }
+    },
+    {
+      "from": "cong_nhan_tc_thac_si_toi_da_bao_nhieu_hieu_luc",
+      "to": "cong_nhan_ket_qua_hoc_tap",
+      "relation": "lien_quan",
+      "properties": {
+        "mo_ta": "Quy định CN TC cho ThS"
+      }
+    },
+    {
+      "from": "dang_ky_de_tai_luan_van_thac_si_khi_nao_the_nao",
+      "to": "dang_ky_de_tai_luan_van",
+      "relation": "mo_ta",
+      "properties": {
+        "mo_ta": "Chi tiết quy trình đăng ký đề tài LV ThS"
+      }
+    },
+    {
+      "from": "diem_luan_van_thac_si_tinh_the_nao_bao_ve_thuong",
+      "to": "luan_van_thac_si",
+      "relation": "mo_ta",
+      "properties": {
+        "mo_ta": "Công thức tính điểm LV ThS"
+      }
+    },
+    {
+      "from": "ncs_xay_dung_ke_hoach_hoc_tap_nghien_cuu_nhu_the_nao",
+      "to": "ke_hoach_hoc_tap_ncs",
+      "relation": "mo_ta",
+      "properties": {
+        "mo_ta": "Chi tiết xây dựng kế hoạch và báo cáo của NCS"
+      }
+    },
+    {
+      "from": "yeu_cau_bai_bao_khoa_hoc_de_bao_ve_luan_an_tien_si",
+      "to": "dieu_kien_bao_ve_co_so",
+      "relation": "thuoc",
+      "properties": {
+        "mo_ta": "Yêu cầu bài báo là điều kiện BV cơ sở"
+      }
+    },
+    {
+      "from": "thoi_gian_cap_bang_tien_si_bao_nhieu_ngay",
+      "to": "dieu_kien_cap_bang_tien_si",
+      "relation": "lien_quan",
+      "properties": {
+        "mo_ta": "Thời hạn 30 ngày LV cấp bằng TS"
+      }
+    },
+    {
+      "from": "ket_qua_hoc_phan_tien_si_duoc_bao_luu_khi_nao",
+      "to": "cong_nhan_tc_tien_si",
+      "relation": "mo_ta",
+      "properties": {
+        "mo_ta": "Các trường hợp HP TS được bảo lưu CN"
+      }
+    },
+    {
+      "from": "quy_dinh_chuyen_tiep_ncs_truoc_sau_2021_2025",
+      "to": "quy_dinh_chuyen_tiep",
+      "relation": "mo_ta",
+      "properties": {
+        "mo_ta": "Chi tiết 3 nhóm NCS theo thời điểm tuyển sinh"
+      }
+    },
+    {
+      "from": "quy_che_co_hieu_luc_tu_khi_nao_thay_the_gi",
+      "to": "hieu_luc_quy_che",
+      "relation": "mo_ta",
+      "properties": {
+        "mo_ta": "Thời điểm hiệu lực và QC được thay thế"
+      }
+    },
+    {
+      "from": "tu_nguyen_thoi_hoc_co_duoc_quay_lai_khong",
+      "to": "nghi_hoc_tam_thoi",
+      "relation": "phan_biet",
+      "properties": {
+        "mo_ta": "Thôi học khác nghỉ tạm thời: thôi học không được quay lại"
+      }
+    },
+    {
+      "from": "sinh_vien_chua_tot_nghiep_duoc_cap_gi",
+      "to": "dieu_kien_tot_nghiep_cn",
+      "relation": "lien_quan",
+      "properties": {
+        "mo_ta": "SV không đủ điều kiện TN được cấp chứng nhận HP"
+      }
+    },
+    {
+      "from": "thoi_gian_dao_tao_chuan_bao_nhieu_nam",
+      "to": "chuong_trinh_dao_tao",
+      "relation": "quy_dinh",
+      "properties": {
+        "mo_ta": "Thời gian và TC tối thiểu của các CTĐT"
+      }
+    },
+    {
+      "from": "thoi_gian_dao_tao_chuan_bao_nhieu_nam",
+      "to": "ctdt_cu_nhan",
+      "relation": "lien_quan",
+      "properties": {
+        "mo_ta": "CT cử nhân: 4 năm 132 TC"
+      }
+    },
+    {
+      "from": "hoc_phan_la_gi_tin_chi_la_gi_dinh_nghia",
+      "to": "tin_chi",
+      "relation": "mo_ta",
+      "properties": {
+        "mo_ta": "Định nghĩa tín chỉ"
+      }
+    },
+    {
+      "from": "hoc_phan_la_gi_tin_chi_la_gi_dinh_nghia",
+      "to": "hoc_phan",
+      "relation": "mo_ta",
+      "properties": {
+        "mo_ta": "Định nghĩa học phần"
+      }
+    },
+    {
+      "from": "pham_vi_ap_dung_quy_che_doi_tuong_nao",
+      "to": "doi_tuong_ap_dung",
+      "relation": "mo_ta",
+      "properties": {
+        "mo_ta": "Đối tượng áp dụng của quy chế"
+      }
+    },
+    {
+      "from": "pham_vi_ap_dung_quy_che_doi_tuong_nao",
+      "to": "pham_vi_dieu_chinh",
+      "relation": "lien_quan",
+      "properties": {
+        "mo_ta": "Phạm vi và đối tượng áp dụng QC"
+      }
+    },
+    {
+      "from": "dieu_kien_nhan_hoc_bong_lien_quan_gpa_cpa",
+      "to": "xep_loai_hoc_luc",
+      "relation": "mo_ta",
+      "properties": {
+        "mo_ta": "Bảng xếp loại học lực đầy đủ"
+      }
+    },
+    {
+      "from": "dieu_kien_nhan_hoc_bong_lien_quan_gpa_cpa",
+      "to": "cpa",
+      "relation": "lien_quan",
+      "properties": {
+        "mo_ta": "CPA quyết định xếp loại và nhiều điều kiện"
+      }
+    },
+    {
+      "from": "hoc_phan_tuong_duong_la_gi_dieu_kien_hoc_thay",
+      "to": "hoc_phan_tuong_duong",
+      "relation": "mo_ta",
+      "properties": {
+        "mo_ta": "Định nghĩa và điều kiện HP tương đương"
+      }
+    },
+    {
+      "from": "diem_cuoi_ky_thi_mot_lan_khong_co_thi_lai",
+      "to": "hoan_thi",
+      "relation": "lien_quan",
+      "properties": {
+        "mo_ta": "Hoãn thi là trường hợp đặc biệt của thi 1 lần"
+      }
+    },
+    {
+      "from": "diem_cuoi_ky_thi_mot_lan_khong_co_thi_lai",
+      "to": "diem_hoc_phan",
+      "relation": "lien_quan",
+      "properties": {
+        "mo_ta": "Thi 1 lần quyết định điểm học phần"
+      }
+    },
+    {
+      "from": "hoc_ky_chinh_hoc_ky_he_khac_nhau_the_nao",
+      "to": "hoc_ky_chinh",
+      "relation": "mo_ta",
+      "properties": {
+        "mo_ta": "Chi tiết học kỳ chính và kỳ hè"
+      }
+    },
+    {
+      "from": "hoc_ky_chinh_hoc_ky_he_khac_nhau_the_nao",
+      "to": "hoc_ky_he",
+      "relation": "mo_ta",
+      "properties": {
+        "mo_ta": "Kỳ hè: max 8 TC, không xét cảnh báo"
+      }
+    },
+    {
+      "from": "bao_ve_luan_an_cap_dai_hoc_dieu_kien_thu_tuc",
+      "to": "bao_ve_luan_an_cap_dh",
+      "relation": "mo_ta",
+      "properties": {
+        "mo_ta": "Chi tiết điều kiện và thủ tục BV cấp ĐH"
+      }
+    },
+    {
+      "from": "bao_ve_luan_an_cap_dai_hoc_dieu_kien_thu_tuc",
+      "to": "phan_bien_doc_lap",
+      "relation": "yeu_cau",
+      "properties": {
+        "mo_ta": "Phải có ý kiến PB độc lập trước BV cấp ĐH"
+      }
+    },
+    {
+      "from": "gia_han_thoi_gian_hoc_tien_si_ncs_dieu_kien",
+      "to": "gia_han_thoi_gian_ncs",
+      "relation": "mo_ta",
+      "properties": {
+        "mo_ta": "Chi tiết điều kiện và thủ tục gia hạn NCS"
+      }
+    },
+    {
+      "from": "gia_han_thoi_gian_hoc_tien_si_ncs_dieu_kien",
+      "to": "dieu_kien_gia_han_ncs",
+      "relation": "yeu_cau",
+      "properties": {
+        "mo_ta": "Phải đủ điều kiện mới được gia hạn"
+      }
+    },
+    {
+      "from": "thi_viet_thi_van_dap_hinh_thuc_danh_gia_cuoi_ky",
+      "to": "diem_cuoi_ky",
+      "relation": "lien_quan",
+      "properties": {
+        "mo_ta": "Hình thức thi quyết định điểm cuối kỳ"
+      }
+    },
+    {
+      "from": "diem_dat_la_bao_nhieu_cu_nhan_thac_si",
+      "to": "diem_hoc_phan",
+      "relation": "lien_quan",
+      "properties": {
+        "mo_ta": "Điểm đạt theo từng bậc đào tạo"
+      }
+    },
+    {
+      "from": "diem_hoc_phan_duoc_tinh_the_nao",
+      "to": "diem_qua_trinh",
+      "relation": "bao_gom",
+      "properties": {
+        "mo_ta": "Điểm QT là thành phần của điểm HP"
+      }
+    },
+    {
+      "from": "diem_hoc_phan_duoc_tinh_the_nao",
+      "to": "diem_cuoi_ky",
+      "relation": "bao_gom",
+      "properties": {
+        "mo_ta": "Điểm CK là thành phần của điểm HP"
+      }
+    },
+    {
+      "from": "so_tc_tich_luy_tinh_the_nao_bao_gom_gi",
+      "to": "so_tc_tich_luy",
+      "relation": "mo_ta",
+      "properties": {
+        "mo_ta": "Cách tính TCTL bao gồm cả điểm R"
+      }
+    },
+    {
+      "from": "hoc_phi_nop_tre_bi_gi_dinh_chi",
+      "to": "dinh_chi_dang_ky_hoc_tap",
+      "relation": "dan_den",
+      "properties": {
+        "mo_ta": "Nộp HP trễ → bị đình chỉ đăng ký 1 kỳ"
+      }
+    },
+    {
+      "from": "rut_dang_ky_hoc_phan_sau_bao_lau_dieu_chinh",
+      "to": "diem_W",
+      "relation": "dan_den",
+      "properties": {
+        "mo_ta": "Rút đăng ký HP → nhận điểm W"
+      }
+    },
+    {
+      "from": "cac_chi_so_danh_gia_ket_qua_hoc_tap_hoc_ky",
+      "to": "xep_loai_hoc_luc",
+      "relation": "lien_quan",
+      "properties": {
+        "mo_ta": "Chỉ số đánh giá dùng để xếp loại học lực"
+      }
+    },
+    {
+      "from": "dang_ky_tot_nghiep_bao_nhieu_tc_hon_yeu_cau",
+      "to": "dieu_kien_tot_nghiep_cn",
+      "relation": "lien_quan",
+      "properties": {
+        "mo_ta": "Quy định TC khi đăng ký TN ĐH"
+      }
+    },
+    {
+      "from": "ket_qua_hoc_tap_duoc_bao_luu_khi_chuyen_ct",
+      "to": "cong_nhan_ket_qua_hoc_tap",
+      "relation": "lien_quan",
+      "properties": {
+        "mo_ta": "Kết quả HP được xét bảo lưu CN khi chuyển CT"
+      }
+    },
+    {
+      "from": "cap_hai_bang_tot_nghiep_dieu_kien",
+      "to": "dieu_kien_tot_nghiep_cn",
+      "relation": "yeu_cau",
+      "properties": {
+        "mo_ta": "Phải đủ ĐK TN CT1 mới được xét TN CT2"
+      }
+    },
+    {
+      "from": "canh_bao_hoc_tap_khong_xet_ky_he",
+      "to": "hoc_ky_he",
+      "relation": "lien_quan",
+      "properties": {
+        "mo_ta": "Kỳ hè không xét cảnh báo học tập"
+      }
+    },
+    {
+      "from": "datn_ky_su_gan_lien_thuc_tap_doanh_nghiep",
+      "to": "thuc_tap_tot_nghiep",
+      "relation": "lien_quan",
+      "properties": {
+        "mo_ta": "Thực tập TN KS gắn với nội dung ĐATN KS"
+      }
+    },
+    {
+      "from": "cong_nhan_tc_thac_si_toi_da_bao_nhieu_hieu_luc",
+      "to": "hoc_phan_cn_khong_tinh_cpa",
+      "relation": "lien_quan",
+      "properties": {
+        "mo_ta": "HP CN ThS không tính CPA xếp hạng TN"
+      }
+    },
+    {
+      "from": "dang_ky_de_tai_luan_van_thac_si_khi_nao_the_nao",
+      "to": "ke_hoach_thuc_hien_luan_van",
+      "relation": "dan_den",
+      "properties": {
+        "mo_ta": "Sau đăng ký đề tài phải lập kế hoạch thực hiện LV"
+      }
+    },
+    {
+      "from": "ncs_xay_dung_ke_hoach_hoc_tap_nghien_cuu_nhu_the_nao",
+      "to": "bao_cao_tien_do_ncs",
+      "relation": "lien_quan",
+      "properties": {
+        "mo_ta": "Kế hoạch gắn với báo cáo tiến độ NCS"
+      }
+    },
+    {
+      "from": "hoc_phan_bo_sung_tien_si_bao_nhieu_tc_ai_phai_hoc",
+      "to": "hoc_phan_tien_si",
+      "relation": "phan_biet",
+      "properties": {
+        "mo_ta": "HP bổ sung khác HP tiến sĩ: HP bổ sung từ bậc ĐH/ThS"
+      }
+    },
+    {
+      "from": "yeu_cau_bai_bao_khoa_hoc_de_bao_ve_luan_an_tien_si",
+      "to": "luan_an_tien_si",
+      "relation": "yeu_cau",
+      "properties": {
+        "mo_ta": "Bài báo là điều kiện bắt buộc để BV LA TS"
+      }
+    },
+    {
+      "from": "thoi_gian_cap_bang_tien_si_bao_nhieu_ngay",
+      "to": "giam_doc_dhbk",
+      "relation": "lien_quan",
+      "properties": {
+        "mo_ta": "GĐ ĐHBK ra QĐ cấp bằng TS trong 30 ngày LV"
+      }
+    },
+    {
+      "from": "ket_qua_hoc_phan_tien_si_duoc_bao_luu_khi_nao",
+      "to": "ncs_thoi_hoc_chuyen_thac_si",
+      "relation": "lien_quan",
+      "properties": {
+        "mo_ta": "NCS thôi học → HP TS được xét CN khi học ThS"
+      }
+    },
+    {
+      "from": "quy_dinh_chuyen_tiep_ncs_truoc_sau_2021_2025",
+      "to": "nhom_ncs_sau_2025",
+      "relation": "bao_gom",
+      "properties": {
+        "mo_ta": "Nhóm NCS sau 01/8/2025 áp dụng QC mới"
+      }
+    },
+    {
+      "from": "thay_doi_de_tai_luan_an_nguoi_huong_dan_ncs_khi_nao",
+      "to": "dang_ky_de_tai_luan_van",
+      "relation": "lien_quan",
+      "properties": {
+        "mo_ta": "Thay đổi đề tài/HD là bước tiếp theo sau đăng ký đề tài"
+      }
+    },
+    {
+      "from": "thay_doi_de_tai_luan_an_nguoi_huong_dan_ncs_khi_nao",
+      "to": "nguoi_huong_dan",
+      "relation": "lien_quan",
+      "properties": {
+        "mo_ta": "Thay đổi người hướng dẫn NCS trước 12 tháng kết thúc CT"
+      }
+    },
+    {
+      "from": "thac_si_dang_ky_tc_moi_ky_moi_nam_cq_vlvh",
+      "to": "dang_ky_hoc_tap_thac_si",
+      "relation": "mo_ta",
+      "properties": {
+        "mo_ta": "Chi tiết TC ThS CQ và VLVH"
+      }
+    },
+    {
+      "from": "bao_ve_luan_van_ths_ngoai_ngu_bac_4_nguoi_huong_dan_xac_nhan",
+      "to": "dieu_kien_bao_ve_luan_van",
+      "relation": "mo_ta",
+      "properties": {
+        "mo_ta": "Chi tiết 3 điều kiện BV LV ThS"
+      }
+    },
+    {
+      "from": "hang_tot_nghiep_giam_hoc_lai_5_phan_tram_ky_luat_canh_cao",
+      "to": "hang_tot_nghiep_cn",
+      "relation": "lien_quan",
+      "properties": {
+        "mo_ta": "Điều kiện giảm hạng TN"
       }
     }
   ]
