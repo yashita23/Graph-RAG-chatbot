@@ -1,31 +1,18 @@
-<div align="center">
-  <img src="https://upload.wikimedia.org/wikipedia/vi/e/ef/Logo_Đại_học_Bách_Khoa_Hà_Nội.svg" alt="HUST Logo" width="100"/>
-  <h1>Graph RAG Chatbot — Quy Chế Đào Tạo ĐHBK 2025</h1>
-  <p><strong>Dự án Hỏi & Đáp thông minh 100% Offline dựa trên công nghệ Graph RAG</strong></p>
 
-  <p>
-    <img src="https://img.shields.io/badge/Python-3.11-blue?logo=python" alt="Python"/>
-    <img src="https://img.shields.io/badge/Next.js-16.2-black?logo=next.js" alt="Next.js"/>
-    <img src="https://img.shields.io/badge/Neo4j-5.20-blue?logo=neo4j" alt="Neo4j"/>
-    <img src="https://img.shields.io/badge/LLM-Qwen2.5:7b-orange" alt="LLM"/>
-  </p>
-</div>
 
----
-
-## 📖 Giới thiệu
+## Giới thiệu
 **Graph RAG Chatbot** là một trợ lý ảo thông minh được thiết kế đặc biệt để giải đáp các thắc mắc về **Quy chế đào tạo Đại học Bách Khoa Hà Nội (QCDT_2025)**. 
 
 Bằng cách kết hợp phương pháp tìm kiếm vector truyền thống với duyệt **Đồ thị Tri thức (Knowledge Graph)**, hệ thống có khả năng cung cấp câu trả lời cực kỳ chuẩn xác, luôn trích dẫn nguồn (Điều/Khoản) và triệt tiêu hoàn toàn vấn đề "Ảo giác" (Hallucination) của các AI thông thường.
 
-## ✨ Tính năng nổi bật
-- 🔒 **100% Local / Offline**: Mọi dữ liệu và quy trình suy luận (từ Vector Search đến LLM Generation) đều diễn ra trên máy cá nhân, bảo vệ quyền riêng tư tuyệt đối.
-- 🕸️ **Kiến trúc Graph RAG**: Lưu trữ 48 điều khoản pháp lý dưới dạng Mạng lưới liên kết (Nodes & Edges). Trích xuất chính xác tín chỉ, số tháng, và điều kiện nhờ thuật toán đếm kết nối ưu tiên.
-- ⚡ **Real-time Streaming**: Phản hồi theo thời gian thực token-by-token qua WebSockets mang lại trải nghiệm mượt mà.
-- 📊 **Giải thích rõ ràng (Explainable AI)**: Tích hợp đồ thị D3.js ngay trên UI, cho phép người dùng nhìn thấy chính xác "não bộ" của AI đang quét qua những vùng thông tin nào để trả lời.
-- 🤖 **Chống ảo giác (Anti-Hallucination)**: Hệ thống an toàn 100%, sẵn sàng từ chối các câu hỏi nằm ngoài phạm vi hoặc gài bẫy.
+##  Tính năng nổi bật
+-  **100% Local / Offline**: Mọi dữ liệu và quy trình suy luận (từ Vector Search đến LLM Generation) đều diễn ra trên máy cá nhân, bảo vệ quyền riêng tư tuyệt đối.
+-  **Kiến trúc Graph RAG**: Lưu trữ 48 điều khoản pháp lý dưới dạng Mạng lưới liên kết (Nodes & Edges). Trích xuất chính xác tín chỉ, số tháng, và điều kiện nhờ thuật toán đếm kết nối ưu tiên.
+   **Real-time Streaming**: Phản hồi theo thời gian thực token-by-token qua WebSockets mang lại trải nghiệm mượt mà.
+-  **Giải thích rõ ràng (Explainable AI)**: Tích hợp đồ thị D3.js ngay trên UI, cho phép người dùng nhìn thấy chính xác "não bộ" của AI đang quét qua những vùng thông tin nào để trả lời.
+-  **Chống ảo giác (Anti-Hallucination)**: Hệ thống an toàn 100%, sẵn sàng từ chối các câu hỏi nằm ngoài phạm vi hoặc gài bẫy.
 
-## 🛠️ Công nghệ sử dụng
+##  Công nghệ sử dụng
 ### Backend
 - **Framework**: `FastAPI` (REST + WebSockets).
 - **Graph Database**: `Neo4j` (chạy qua Docker).
@@ -37,7 +24,7 @@ Bằng cách kết hợp phương pháp tìm kiếm vector truyền thống vớ
 - **Styling**: `Tailwind CSS v4`.
 - **Visualization**: `D3.js` (Graph Panel).
 
-## 🚀 Hướng dẫn cài đặt
+##  Hướng dẫn cài đặt
 
 ### Yêu cầu hệ thống
 - Tối thiểu 8GB RAM (Khuyến nghị 16GB).
@@ -70,7 +57,7 @@ npm run dev
 ```
 Truy cập ứng dụng tại: **http://localhost:3000**
 
-## 📈 Kết quả Đánh giá (Evaluation Metrics)
+##  Kết quả Đánh giá (Evaluation Metrics)
 Hệ thống được đánh giá tự động dựa trên 50 test-cases siêu khó. Kết quả đo kiểm nội bộ (Local) đạt được:
 
 | Chỉ số (Metric) | Kết quả Đạt được |
@@ -80,6 +67,3 @@ Hệ thống được đánh giá tự động dựa trên 50 test-cases siêu k
 | **Điều khoản Recall** | `100.0%` (Trích dẫn đúng 100% văn bản) |
 | **Kiểm soát Hallucination** | `100% Pass` (Tuyệt đối không bịa thông tin) |
 
-## 👨‍💻 Tác giả
-- Sinh viên thực hiện: **Bùi Công Hoan** (MSSV: 20235083)
-- Học phần: **Project 2** - Đại học Bách Khoa Hà Nội
