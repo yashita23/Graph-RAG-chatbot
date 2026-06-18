@@ -1,4 +1,4 @@
-import ollama
+from ollama import AsyncClient
 from ..utils.logger import get_logger
 
 logger = get_logger(__name__)
@@ -30,7 +30,8 @@ class Generator:
             messages.append({"role": msg["role"], "content": msg["content"]})
         messages.append({"role": "user", "content": query})
 
-        stream = ollama.chat(
+        client = AsyncClient()
+        response = await client.chat(
             model=self.model,
             messages=messages,
             stream=True,
@@ -40,7 +41,7 @@ class Generator:
                 "stop": ["根据", "按照", "该", "其中", "学分", "学期"],
             }
         )
-        for chunk in stream:
+        async for chunk in response:
             delta = chunk["message"]["content"]
             if delta:
                 yield delta
