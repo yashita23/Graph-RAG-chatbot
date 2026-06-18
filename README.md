@@ -1,15 +1,4 @@
-<div align="center">
-  <img src="https://upload.wikimedia.org/wikipedia/vi/e/ef/Logo_Đại_học_Bách_Khoa_Hà_Nội.svg" alt="HUST Logo" width="100"/>
-  <h1>Graph RAG Chatbot — Quy Chế Đào Tạo ĐHBK 2025</h1>
-  <p><strong>Dự án Hỏi & Đáp thông minh 100% Offline dựa trên công nghệ Graph RAG</strong></p>
 
-  <p>
-    <img src="https://img.shields.io/badge/Python-3.11-blue?logo=python" alt="Python"/>
-    <img src="https://img.shields.io/badge/Next.js-16.2-black?logo=next.js" alt="Next.js"/>
-    <img src="https://img.shields.io/badge/Neo4j-5.20-blue?logo=neo4j" alt="Neo4j"/>
-    <img src="https://img.shields.io/badge/LLM-Qwen2.5:7b-orange" alt="LLM"/>
-  </p>
-</div>
 
 ---
 
